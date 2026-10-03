@@ -14,56 +14,63 @@
 <body>
 
 <header class="wrap header">
-  <a href="#top" class="logo"><span class="logo-dot"></span>Shydel</a>
+  <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
   <nav class="nav">
-    <a href="#coverage" class="nav-link">Coverage</a>
-    <a href="#approach" class="nav-link">Approach</a>
-    <a href="#team" class="nav-link">Team</a>
+    <a href="index.html" class="nav-link nav-keep" aria-current="page">Home</a>
+    <a href="private-equity.html" class="nav-link">Private equity</a>
+    <a href="real-estate.html" class="nav-link">Real estate</a>
+    <a href="public-equities.html" class="nav-link">Public equities</a>
+    <a href="fixed-income.html" class="nav-link">Fixed income</a>
+    <a href="about.html" class="nav-link nav-keep">About</a>
     <a href="#contact" class="pill pill-dark">Contact</a>
   </nav>
 </header>
 
-<main id="top">
+<main>
   <section class="wrap hero">
     <h1>AI for the<br>whole <span class="accent">portfolio.</span></h1>
     <div class="hero-foot">
-      <p class="lede">Shydel builds AI systems for asset managers in private equity, real estate, public equities and fixed income. We build custom systems, deploy them in your environment and maintain them with you.</p>
+      <p class="lede">AI systems for asset managers. Built around your workflows, deployed in your environment and maintained with you.</p>
       <a href="#contact" class="pill pill-accent pill-lg">Book an intro call →</a>
     </div>
   </section>
 
-  <section id="coverage" class="wrap coverage">
-    <div class="card card-dark">
+  <section class="wrap coverage">
+    <a href="private-equity.html" class="card card-link card-dark">
       <span class="tag">01 — Private equity</span>
       <div>
         <h3>From data room to investor report.</h3>
-        <p>Deal screening, portfolio-company KPI monitoring and first drafts of quarterly reports to your fund's investors.</p>
+        <p>Deal screening, portfolio monitoring and investor reporting.</p>
+        <span class="card-more">Learn more →</span>
       </div>
-    </div>
-    <div class="card">
+    </a>
+    <a href="real-estate.html" class="card card-link">
       <span class="tag">02 — Real estate</span>
       <div>
         <h3>Every lease, read.</h3>
-        <p>Rent rolls, leases and operating statements extracted for underwriting and asset monitoring.</p>
+        <p>Leases, rent rolls and operating statements, extracted.</p>
+        <span class="card-more">Learn more →</span>
       </div>
-    </div>
-    <div class="card card-accent">
+    </a>
+    <a href="public-equities.html" class="card card-link card-accent">
       <span class="tag">03 — Public equities</span>
       <div>
         <h3>Research that keeps up with the market.</h3>
-        <p>Filings, transcripts and news, mapped to your positions and risk exposures.</p>
+        <p>Filings, transcripts and news, mapped to your positions.</p>
+        <span class="card-more">Learn more →</span>
       </div>
-    </div>
-    <div class="card">
+    </a>
+    <a href="fixed-income.html" class="card card-link">
       <span class="tag">04 — Fixed income</span>
       <div>
         <h3>Covenants and credit, watched.</h3>
-        <p>Prospectus extraction, issuer surveillance, and duration and spread analytics.</p>
+        <p>Prospectus extraction and issuer surveillance.</p>
+        <span class="card-more">Learn more →</span>
       </div>
-    </div>
+    </a>
   </section>
 
-  <section id="approach" class="approach">
+  <section class="approach">
     <div class="wrap">
       <h2>We build it. We run it. <span class="muted">You make the calls.</span></h2>
       <ol class="steps">
@@ -75,30 +82,7 @@
     </div>
   </section>
 
-  <section id="team" class="wrap team">
-    <div class="team-head">
-      <h2>The founders.</h2>
-      <p>Two engineers trained to pull signal out of noise, now applying it to capital markets.</p>
-    </div>
-    <div class="team-grid">
-      <article class="person">
-        <img src="assets/team/volodymyr.jpg" alt="Volodymyr Shyianov" loading="lazy">
-        <div class="person-body">
-          <div class="person-name"><h3>Volodymyr Shyianov</h3><span class="tag">Co-founder</span></div>
-          <p>PhD candidate in Electrical Engineering at the University of Manitoba, working on information theory and signal processing. NSERC research awards. Previously at Ansys.</p>
-        </div>
-      </article>
-      <article class="person">
-        <img src="assets/team/bamelak.jpg" alt="Bamelak Tadele" loading="lazy" class="pos-high">
-        <div class="person-body">
-          <div class="person-name"><h3>Bamelak Tadele</h3><span class="tag">Co-founder</span></div>
-          <p>PhD candidate in Electrical Engineering at the University of Manitoba, working on massive MIMO systems and antenna design. Multiple NSERC awards. Previously at Ansys.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="wrap">
+  <section id="contact" class="wrap cta-gap">
     <div class="cta">
       <h2>Let's talk about your portfolio.</h2>
       <div class="cta-side">
@@ -111,7 +95,14 @@
 
 <footer class="wrap footer">
   <span>© 2026 Shydel</span>
-  <span>shydel.com</span>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="private-equity.html">Private equity</a>
+    <a href="real-estate.html">Real estate</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="fixed-income.html">Fixed income</a>
+    <a href="about.html">About</a>
+  </nav>
 </footer>
 
 </body>
