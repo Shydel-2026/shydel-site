@@ -10,5 +10,4 @@ python -m http.server 8000
 
 ## To do
 
-- Replace `[CONTACT EMAIL]` / `mailto:CONTACT_EMAIL` in `index.html` with the real address.
 - Point the shydel.com domain at the host (Vercel or GitHub Pages).
