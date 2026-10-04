@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Public equities — Shydel</title>
-  <meta name="description" content="AI systems for public equities: filings and transcript analysis, news monitoring, exposure mapping and research drafts.">
+  <meta name="description" content="Agentic AI analysts for public equity firms, trained on your investment framework: SEC filings, normalized earnings, balance sheet forensics, capital allocation, special situations, outcome modeling, portfolio fit and position structuring.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,34 +29,138 @@
 <main>
   <section class="wrap page-hero">
     <span class="tag">03 — Public equities</span>
-    <h1>Research that keeps up with <span class="accent">the market.</span></h1>
-    <p class="lede">AI systems that read filings, transcripts and news as they come out, and tie what they find to your positions and risk exposures.</p>
+    <h1>An analyst trained on <span class="accent">your framework.</span></h1>
+    <p class="lede">We build agentic systems that learn how your firm invests, do the work your analysts would do on every company in your universe, and join the team as one more analyst.</p>
+  </section>
+
+  <section class="band-dark">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Your framework, not a checklist</span>
+        <h2>Two firms can read the same 10-K and reach opposite conclusions.</h2>
+        <p>Every investor wants to buy a business for less than it's worth. Where firms differ is in how they measure that worth. A Graham-style value shop anchors on assets and normalized earnings, and wants a wide margin of safety today. A growth fund will pay up for a long runway to reinvest at high returns. A generic model can't serve both, so we don't ship one. We train the agent on your criteria, your thresholds and your past calls, for the part of the market you actually invest in.</p>
+        <p>And almost no company passes every screen. A business earning 25% on its capital usually trades well above book, and that's fair if the margins hold. So the agent weighs the factors against each other the way your analysts would. A miss lowers its confidence in the stock. It doesn't rule the stock out.</p>
+        <p>Nor is it a ratio screen. The risks that hurt a stock most tend to build quietly, across the balance sheet, the cash flows and the competitive landscape, long before they reach the headline numbers. The agent reads every filing for those slow-building problems and weighs how they could play out over the next few years. That forward view, more than any single ratio, is what sets its confidence.</p>
+        <p>Then it asks the question that matters most: does this stock make your portfolio better? Will it add to overall return, diversify what you already hold, or both?</p>
+        <div class="chips">
+          <span class="chip">Deep value</span>
+          <span class="chip">Quality</span>
+          <span class="chip">Growth</span>
+          <span class="chip">Special situations</span>
+          <span class="chip">Large cap</span>
+          <span class="chip">Mid cap</span>
+          <span class="chip">Small &amp; micro cap</span>
+        </div>
+      </div>
+      <figure class="mandate">
+        <figcaption>Illustrative · one company, scored for your framework and your portfolio</figcaption>
+        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
+
+        <div class="score-group g1">The numbers</div>
+        <div class="score-row"><span class="score-factor">Return on invested capital</span><span class="score-val">24%</span><span class="effect pos" style="--w: .8"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Operating margin</span><span class="score-val">Stable, 5 yrs</span><span class="effect pos" style="--w: .55"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Tangible book value</span><span class="score-val">+9% / yr</span><span class="effect pos" style="--w: .5"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">EV / EBIT</span><span class="score-val">11× <small>vs 8×</small></span><span class="effect neg" style="--w: .3"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Price / tangible book</span><span class="score-val">2.4×</span><span class="effect neg" style="--w: .45"><i></i></span></div>
+
+        <div class="score-group g2">What the numbers don't show yet</div>
+        <div class="score-row"><span class="score-factor">Free cash flow ahead<span class="hint">Cash being tied up in stock</span></span><span class="score-val">Inventory +22%, sales +5%</span><span class="effect neg" style="--w: .45"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Capital needs ahead<span class="hint">Spending that will have to come</span></span><span class="score-val">Plants near end of life</span><span class="effect neg" style="--w: .4"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Leverage ahead<span class="hint">Borrowing to fund the gap</span></span><span class="score-val">Debt outgrowing earnings</span><span class="effect neg" style="--w: .5"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Margins ahead<span class="hint">Pricing power at risk</span></span><span class="score-val">Low-cost rival gaining share</span><span class="effect neg" style="--w: .4"><i></i></span></div>
+        <div class="conf conf-sub">
+          <div class="conf-head"><span>Fits your framework</span><span class="conf-val">58% <span>(44–69%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 44%; width: 25%;"></span><span class="conf-point" style="left: 58%;"></span></div>
+        </div>
+
+        <div class="score-group g3">Effect on your portfolio</div>
+        <div class="score-row"><span class="score-factor">Expected return contribution</span><span class="score-val">+0.6 pts / yr</span><span class="effect pos" style="--w: .6"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Correlation with your holdings</span><span class="score-val">0.28</span><span class="effect pos" style="--w: .7"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Trading liquidity</span><span class="score-val">~6 days to build</span><span class="effect neg" style="--w: .2"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Sector exposure</span><span class="score-val">14% → 17%</span><span class="effect neg" style="--w: .3"><i></i></span></div>
+
+        <div class="conf conf-total">
+          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">63% <span>(52–73%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 52%; width: 21%;"></span><span class="conf-point" style="left: 63%;"></span></div>
+          <p class="conf-note"><span class="role">Diversifier</span> Strong returns, but rising debt and capital needs hold confidence back. Flagged for an analyst.</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap deep">
+    <div class="section-head">
+      <h2>What it does on every name.</h2>
+      <p>The work a careful analyst would do, on every company you follow, each time a new filing lands.</p>
+    </div>
+    <ol class="process">
+      <li>
+        <span class="process-n">01</span>
+        <h3>Pulls the filings</h3>
+        <p>Annual and quarterly reports, current reports and proxies come straight from SEC EDGAR as soon as they're filed. No manual downloads, no stale data.</p>
+      </li>
+      <li>
+        <span class="process-n">02</span>
+        <h3>Finds real earning power</h3>
+        <p>Reported earnings are adjusted for one-off and non-recurring items such as restructuring charges, asset sale gains, write-downs and litigation, to arrive at a normalized figure the business can actually repeat.</p>
+      </li>
+      <li>
+        <span class="process-n">03</span>
+        <h3>Takes the balance sheet apart</h3>
+        <p>It separates tangible from intangible assets, sets debt against total capitalization, and traces how net income flows through dividends and buybacks into retained earnings, checking that the numbers tie out.</p>
+      </li>
+      <li>
+        <span class="process-n">04</span>
+        <h3>Looks for trouble years ahead</h3>
+        <p>Every line item is read for problems that haven't reached the headline numbers yet: working capital drifting out of line with sales, funding needs the business may struggle to meet, leverage building faster than equity, and a competitive position starting to erode.</p>
+      </li>
+      <li>
+        <span class="process-n">05</span>
+        <h3>Judges capital allocation</h3>
+        <p>Buybacks, dividends, acquisitions and reinvestment are weighed against what they earned, including whether shares were bought back below or above what they were worth.</p>
+      </li>
+      <li>
+        <span class="process-n">06</span>
+        <h3>Spots special situations</h3>
+        <p>It watches for spin-offs, restructurings, recapitalizations and bankruptcies, where forced selling, index changes and sheer complexity often push prices away from value. Each one gets the full analysis, including what the company looks like on the other side.</p>
+      </li>
+      <li>
+        <span class="process-n">07</span>
+        <h3>Models the range of outcomes</h3>
+        <p>Instead of a single target price or a pass/fail screen, it builds a spread of statistical scenarios, a confidence range for how well the company fits your framework, and the probability of permanent loss, all updated as new figures come in.</p>
+      </li>
+      <li>
+        <span class="process-n">08</span>
+        <h3>Places it in the portfolio</h3>
+        <p>It looks at the sector and at how the company moves with what you already hold. It estimates what the position would add to overall return and to overall risk, and whether it diversifies the portfolio or doubles up on exposure you already carry.</p>
+      </li>
+      <li>
+        <span class="process-n">09</span>
+        <h3>Chooses how to own it</h3>
+        <p>The same view can be expressed in different ways. It compares outright stock, options and the company's debt, weighing payoff, downside and cost across the modeled outcomes, and suggests the structure that best fits the thesis. That might be senior debt that still recovers value in a bad scenario, or options that cap the loss.</p>
+      </li>
+    </ol>
   </section>
 
   <section class="wrap uses">
     <div class="section-head">
-      <h2>What we build.</h2>
+      <h2>One more analyst on the team.</h2>
     </div>
     <div class="use-grid">
       <article class="use">
-        <span class="tag">Filings &amp; transcripts</span>
-        <h3>Every filing and call, summarized.</h3>
-        <p>Annual and quarterly reports and earnings calls summarized against your thesis, with changes from prior periods highlighted.</p>
+        <span class="tag">Learns</span>
+        <h3>Gets better with your feedback.</h3>
+        <p>When an analyst overrides a call or corrects a figure, the agent learns from it, so its work moves closer to your house view over time.</p>
       </article>
       <article class="use">
-        <span class="tag">News monitoring</span>
-        <h3>News mapped to your book.</h3>
-        <p>News and announcements filtered to the companies you hold or follow, so analysts see what matters to the portfolio.</p>
+        <span class="tag">Traceable</span>
+        <h3>Every number has a source.</h3>
+        <p>Each adjustment links back to the line in the filing it came from, so your team can check the work in seconds instead of redoing it.</p>
       </article>
       <article class="use">
-        <span class="tag">Exposure mapping</span>
-        <h3>Know what you're really exposed to.</h3>
-        <p>Positions linked to the suppliers, customers, regions and themes they depend on, so risks show up before they hit the price.</p>
-      </article>
-      <article class="use">
-        <span class="tag">Research drafts</span>
-        <h3>First drafts your analysts edit.</h3>
-        <p>Company notes and earnings recaps drafted from source material, with every claim cited back to the document it came from.</p>
+        <span class="tag">Coverage</span>
+        <h3>The whole universe, covered.</h3>
+        <p>Follow every name that fits your mandate, including the small and microcaps that few analysts cover, without adding headcount.</p>
       </article>
     </div>
   </section>
