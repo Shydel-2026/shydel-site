@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fixed income — Shydel</title>
-  <meta name="description" content="AI systems for fixed income: prospectus and indenture extraction, covenant tracking, issuer surveillance and duration and spread analytics.">
+  <meta name="description" content="Agentic AI credit analysts trained on your framework: interest coverage, seniority, collateral, equity cushion, covenants, default and recovery modeling, portfolio fit.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,34 +29,151 @@
 <main>
   <section class="wrap page-hero">
     <span class="tag">04 — Fixed income</span>
-    <h1>Covenants and credit, <span class="accent">watched.</span></h1>
-    <p class="lede">AI systems that extract terms from offering documents, track covenants and watch issuers, so credit teams can cover more names with the same people.</p>
+    <h1>The return is fixed. <span class="accent">The risk isn't.</span></h1>
+    <p class="lede">We build agentic systems for credit teams that start where a lender starts: with the downside. Trained on your credit framework, the agent asks one question of every issue, and keeps asking it as new filings arrive. Can this company fail to pay us back?</p>
+  </section>
+
+  <section class="band-blue">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Protection first</span>
+        <h2>A bond's upside is capped. Its downside isn't.</h2>
+        <p>An equity investor is paid for being right about what a business could become. A bondholder is paid a fixed coupon, and the return to maturity can be worked out in a line. What can't be worked out so easily is the loss if something unforeseen goes wrong. So the agent puts its effort where credit risk actually lives: whether the issuer can keep paying, and what you recover if it can't.</p>
+        <p>As with equities, nothing is pass/fail. Thin coverage can be acceptable with hard collateral and a deep cushion of equity beneath you. Strong coverage counts for less if you're last in line. The agent weighs these against each other, looks ahead for what could weaken them, and turns the result into a confidence range around repayment rather than a single rating.</p>
+        <p>And no bond is judged alone. Credit losses tend to arrive together, in the same sectors and the same downturns. So the agent also asks whether an issuer's risk of default moves with what you already hold, and how confident it is that the bond makes the whole portfolio safer, not just that it will be repaid.</p>
+        <div class="chips">
+          <span class="chip">Investment grade</span>
+          <span class="chip">High yield</span>
+          <span class="chip">Distressed</span>
+          <span class="chip">Private credit</span>
+        </div>
+      </div>
+
+      <figure class="stack-card">
+        <figcaption>Illustrative · one senior secured bond, scored for protection and for your portfolio</figcaption>
+
+        <div class="stack-title">Claims on the company, most senior first</div>
+        <div class="layer layer-this">
+          <span class="layer-name">Senior secured notes <span class="this-tag">This bond</span></span>
+          <span class="layer-amt">$400M</span>
+          <span class="layer-bar"><i style="--w: .44"></i></span>
+        </div>
+        <div class="layer">
+          <span class="layer-name">Senior unsecured notes</span>
+          <span class="layer-amt">$250M</span>
+          <span class="layer-bar"><i style="--w: .28"></i></span>
+        </div>
+        <div class="layer">
+          <span class="layer-name">Subordinated notes</span>
+          <span class="layer-amt">$150M</span>
+          <span class="layer-bar"><i style="--w: .17"></i></span>
+        </div>
+        <div class="layer layer-equity">
+          <span class="layer-name">Common stock, at market</span>
+          <span class="layer-amt">$900M</span>
+          <span class="layer-bar"><i style="--w: 1"></i></span>
+        </div>
+        <p class="cushion"><strong>$1.3B</strong> beneath this bond has to be lost before it takes a hit.</p>
+
+        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
+        <div class="score-group g1">Protection</div>
+        <div class="score-row"><span class="score-factor">Interest coverage</span><span class="score-val">4.2× <small>1.9× stressed</small></span><span class="effect pos" style="--w: .35"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Collateral</span><span class="score-val">1.4× the issue</span><span class="effect pos" style="--w: .6"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Equity cushion</span><span class="score-val">3× the issue</span><span class="effect pos" style="--w: .7"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Covenant headroom</span><span class="score-val">30%</span><span class="effect pos" style="--w: .25"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Refinancing ahead</span><span class="score-val">45% due 2028</span><span class="effect neg" style="--w: .45"><i></i></span></div>
+        <div class="conf conf-sub">
+          <div class="conf-head"><span>Repaid in full</span><span class="conf-val">96% <span>(92–98%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 92%; width: 6%;"></span><span class="conf-point" style="left: 96%;"></span></div>
+        </div>
+
+        <div class="score-group g3">Effect on your portfolio</div>
+        <div class="score-row"><span class="score-factor">Default risk vs your holdings</span><span class="score-val">Low overlap</span><span class="effect pos" style="--w: .65"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Yield added</span><span class="score-val">7.1% <small>+0.4 pts</small></span><span class="effect pos" style="--w: .4"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Sector exposure</span><span class="score-val">9% → 11%</span><span class="effect neg" style="--w: .2"><i></i></span></div>
+
+        <div class="conf conf-total">
+          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">78% <span>(70–85%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 70%; width: 15%;"></span><span class="conf-point" style="left: 78%;"></span></div>
+          <p class="fi-verdict"><span class="verdict">Diversifier</span> Well protected, and its default risk doesn't rise in the same downturns as the rest of the book.</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap deep">
+    <div class="section-head">
+      <h2>What it does on every issue.</h2>
+      <p>The work a careful credit analyst would do, on every issuer you hold or follow, each time something changes.</p>
+    </div>
+    <ol class="process">
+      <li>
+        <span class="process-n">01</span>
+        <h3>Reads every document</h3>
+        <p>Annual and quarterly reports, prospectuses, indentures and credit agreements, pulled as soon as they're filed. The terms that matter are extracted and linked back to the clause they came from.</p>
+      </li>
+      <li>
+        <span class="process-n">02</span>
+        <h3>Tests the coverage</h3>
+        <p>Interest coverage is measured on normalized earnings, stripped of one-off items, and then again in a bad year. A company that covers its interest comfortably only in good times isn't a safe borrower.</p>
+      </li>
+      <li>
+        <span class="process-n">03</span>
+        <h3>Maps the capital structure</h3>
+        <p>Every claim ahead of yours and behind it is laid out in order, including leases, pensions and debt at subsidiaries that can quietly rank ahead of a parent company's bonds.</p>
+      </li>
+      <li>
+        <span class="process-n">04</span>
+        <h3>Values the collateral</h3>
+        <p>What's pledged, how the liens are structured and what the assets would realistically fetch in a forced sale, not what they're carried at on the balance sheet.</p>
+      </li>
+      <li>
+        <span class="process-n">05</span>
+        <h3>Measures the equity cushion</h3>
+        <p>The market value of the stock beneath the issue shows how much value the company can lose before bondholders are touched. It is tracked as the share price moves, not once a quarter.</p>
+      </li>
+      <li>
+        <span class="process-n">06</span>
+        <h3>Reads the covenants</h3>
+        <p>What protection the indenture really gives, how much headroom is left, and where the gaps are that would let assets or cash move out of reach of bondholders.</p>
+      </li>
+      <li>
+        <span class="process-n">07</span>
+        <h3>Looks for trouble years ahead</h3>
+        <p>Maturities bunching into a refinancing wall, free cash flow being absorbed by working capital, spending the business will have to make, and competition starting to erode margins.</p>
+      </li>
+      <li>
+        <span class="process-n">08</span>
+        <h3>Models default and recovery</h3>
+        <p>A range of scenarios for the chance of default and how much would be recovered if it happened, giving a probability of loss with an honest range around it. Updated as new figures come in.</p>
+      </li>
+      <li>
+        <span class="process-n">09</span>
+        <h3>Fits it to the portfolio</h3>
+        <p>Issuer and sector concentration, duration and spread, and whether its default risk rises in the same downturns as the rest of the book. It also compares the issuer's other bonds and loans, to find the claim that offers the most protection for the yield.</p>
+      </li>
+    </ol>
   </section>
 
   <section class="wrap uses">
     <div class="section-head">
-      <h2>What we build.</h2>
+      <h2>One more analyst on the credit team.</h2>
     </div>
     <div class="use-grid">
       <article class="use">
-        <span class="tag">Document extraction</span>
-        <h3>Prospectuses and indentures, structured.</h3>
-        <p>Coupons, maturities, call schedules, covenants and definitions pulled from offering documents into a searchable record.</p>
+        <span class="tag">Learns</span>
+        <h3>Gets better with your feedback.</h3>
+        <p>When your credit committee overrules a view or an analyst corrects a figure, the agent learns from it and moves closer to your house view.</p>
       </article>
       <article class="use">
-        <span class="tag">Covenant tracking</span>
-        <h3>Compliance, checked every period.</h3>
-        <p>Covenant tests calculated from reported financials, with headroom tracked over time and breaches flagged early.</p>
+        <span class="tag">Traceable</span>
+        <h3>Every term has a source.</h3>
+        <p>Each figure and covenant links back to the page of the filing or indenture it came from, so the team can check the work in seconds.</p>
       </article>
       <article class="use">
-        <span class="tag">Issuer surveillance</span>
+        <span class="tag">Surveillance</span>
         <h3>Every issuer, watched.</h3>
-        <p>Filings, rating actions and news monitored across the issuers you hold, summarized for the credit team.</p>
-      </article>
-      <article class="use">
-        <span class="tag">Analytics</span>
-        <h3>Duration and spread, on demand.</h3>
-        <p>Duration, spread and sensitivity analytics across the portfolio, built on the same structured data.</p>
+        <p>Coverage, cushion and covenant headroom are re-checked whenever a filing, rating action or price move changes the picture.</p>
       </article>
     </div>
   </section>
