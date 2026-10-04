@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Real estate — Shydel</title>
-  <meta name="description" content="AI systems for real estate: lease abstraction, rent roll and operating statement extraction, underwriting and asset monitoring.">
+  <meta name="description" content="Agentic AI analysts for real estate funds and REITs, trained on your underwriting: acquisitions, development, leasing and operations, NOI, FFO and AFFO, and portfolio balance across cities and property types.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,34 +29,141 @@
 <main>
   <section class="wrap page-hero">
     <span class="tag">02 — Real estate</span>
-    <h1>Every lease, <span class="accent">read.</span></h1>
-    <p class="lede">AI systems that turn leases, rent rolls and operating statements into clean, structured data for underwriting and asset management.</p>
+    <h1>Real estate is a portfolio. <span class="accent">Run it like one.</span></h1>
+    <p class="lede">We build agentic systems that underwrite every property, project and lease the way your team does, and weigh each one against everything you already own.</p>
+  </section>
+
+  <section class="band-sand">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Every property is a position</span>
+        <h2>One fund, many strategies, a few cities.</h2>
+        <p>A real estate fund or REIT is a portfolio like any other. It may own commercial and residential buildings outright, usually concentrated in a handful of cities. It may buy land and develop it, either to sell or to hold and lease. Each strategy has its own economics and its own risks, and every new asset changes the risk of the whole.</p>
+        <p>The agent is trained on how your firm underwrites: target yields, cost and occupancy assumptions, development hurdles. Like the rest of our systems, it doesn't stop at pass or fail. It looks for what could break the plan years out and gives a confidence range that each asset delivers what it was underwritten to do.</p>
+        <p>Then it asks whether the asset makes the portfolio better. Will it add to funds from operations, spread risk across cities and property types, or pile more onto exposure you already carry?</p>
+        <div class="chips">
+          <span class="chip">Residential</span>
+          <span class="chip">Commercial</span>
+          <span class="chip">Land &amp; development</span>
+          <span class="chip">Build to sell</span>
+          <span class="chip">Build to rent</span>
+        </div>
+      </div>
+
+      <figure class="stack-card">
+        <figcaption>Illustrative · one development, scored against your portfolio</figcaption>
+
+        <div class="stack-title">Portfolio by city, before and after</div>
+        <div class="mix">
+          <div class="mix-row"><span>Today</span><span class="mix-bar"><i style="--w: 38; --c: #2340D9"></i><i style="--w: 27; --c: #2FA36B"></i><i style="--w: 21; --c: #C98A1B"></i><i style="--w: 14; --c: #8C5CD6"></i></span></div>
+          <div class="mix-row"><span>After</span><span class="mix-bar"><i style="--w: 35; --c: #2340D9"></i><i style="--w: 25; --c: #2FA36B"></i><i style="--w: 27; --c: #C98A1B"></i><i style="--w: 13; --c: #8C5CD6"></i></span></div>
+          <div class="mix-legend"><span style="--c: #2340D9">City A</span><span style="--c: #2FA36B">City B</span><span style="--c: #C98A1B">City C</span><span style="--c: #8C5CD6">City D</span></div>
+        </div>
+        <p class="candidate"><strong>180-unit mid-rise, City C</strong> · land bought, build to rent</p>
+
+        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
+        <div class="score-group g1">The project</div>
+        <div class="score-row"><span class="score-factor">Construction cost</span><span class="score-val">$212 <small>vs $240 / sq ft</small></span><span class="effect pos" style="--w: .5"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Yield on cost</span><span class="score-val">6.8% <small>vs 5.2% cap rate</small></span><span class="effect pos" style="--w: .65"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Stabilized occupancy</span><span class="score-val">94% <small>market 91%</small></span><span class="effect pos" style="--w: .3"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">AFFO per unit</span><span class="score-val">+1.8%</span><span class="effect pos" style="--w: .4"><i></i></span></div>
+
+        <div class="score-group g2">What could break the plan</div>
+        <div class="score-row"><span class="score-factor">Cost overruns<span class="hint">Labour costs rising fast</span></span><span class="score-val">+9% / yr</span><span class="effect neg" style="--w: .4"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Slower lease-up<span class="hint">New supply in the submarket</span></span><span class="score-val">2,400 units</span><span class="effect neg" style="--w: .45"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Financing<span class="hint">Construction loan to refinance</span></span><span class="score-val">Rate reset 2027</span><span class="effect neg" style="--w: .3"><i></i></span></div>
+        <div class="conf conf-sub">
+          <div class="conf-head"><span>Delivers its underwriting</span><span class="conf-val">66% <span>(55–76%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 55%; width: 21%;"></span><span class="conf-point" style="left: 66%;"></span></div>
+        </div>
+
+        <div class="score-group g3">Effect on your portfolio</div>
+        <div class="score-row"><span class="score-factor">Property type mix</span><span class="score-val">Less office</span><span class="effect pos" style="--w: .5"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">Rents vs your other cities</span><span class="score-val">Low correlation</span><span class="effect pos" style="--w: .45"><i></i></span></div>
+        <div class="score-row"><span class="score-factor">City concentration</span><span class="score-val">City C 21% → 27%</span><span class="effect neg" style="--w: .35"><i></i></span></div>
+
+        <div class="conf conf-total">
+          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">71% <span>(62–79%)</span></span></div>
+          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 62%; width: 17%;"></span><span class="conf-point" style="left: 71%;"></span></div>
+          <p class="fi-verdict"><span class="verdict">Diversifier</span> Builds below market cost and balances the office exposure, but new supply and a 2027 refinancing keep confidence in check.</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap deep">
+    <div class="section-head">
+      <h2>What it does on every asset.</h2>
+      <p>The work a careful asset manager or acquisitions analyst would do, across every property and project, each time new numbers arrive.</p>
+    </div>
+    <ol class="process">
+      <li>
+        <span class="process-n">01</span>
+        <h3>Reads every document</h3>
+        <p>Leases, rent rolls, operating statements, appraisals, construction contracts and loan agreements, with every term linked back to the page it came from.</p>
+      </li>
+      <li>
+        <span class="process-n">02</span>
+        <h3>Finds the real cash flow</h3>
+        <p>Net operating income is cleaned of one-off items, then carried through to FFO and AFFO, the measures of cash the portfolio actually generates after the spending needed to keep buildings competitive.</p>
+      </li>
+      <li>
+        <span class="process-n">03</span>
+        <h3>Underwrites acquisitions</h3>
+        <p>Price against replacement cost and comparable sales, going-in yield against your hurdle, and in-place rents against the market, to see whether there's upside or a rent roll that's about to reset lower.</p>
+      </li>
+      <li>
+        <span class="process-n">04</span>
+        <h3>Tracks development</h3>
+        <p>Land, permits, construction budget, cost to complete and schedule, checked against each new cost report. Overruns and delays are flagged while there is still time to act.</p>
+      </li>
+      <li>
+        <span class="process-n">05</span>
+        <h3>Optimizes operations</h3>
+        <p>Operating cost per unit and per square foot against comparable buildings, occupancy, rent growth and tenant retention, to find where each property is leaving income on the table.</p>
+      </li>
+      <li>
+        <span class="process-n">06</span>
+        <h3>Watches the leases</h3>
+        <p>Expiries bunching into the same year, reliance on a few large tenants, and the credit of the tenants themselves, all tracked across the portfolio.</p>
+      </li>
+      <li>
+        <span class="process-n">07</span>
+        <h3>Looks for trouble years ahead</h3>
+        <p>New supply coming to a submarket, construction and operating costs outrunning rents, loans that will refinance at higher rates, and shifts in demand for a property type.</p>
+      </li>
+      <li>
+        <span class="process-n">08</span>
+        <h3>Models the range of outcomes</h3>
+        <p>Scenarios for rents, occupancy, costs and exit values give a confidence range that each asset delivers its underwriting, and the probability of loss, updated as new figures come in.</p>
+      </li>
+      <li>
+        <span class="process-n">09</span>
+        <h3>Balances the portfolio</h3>
+        <p>Exposure by city, property type, strategy and tenant, and how each asset moves with the rest. It also weighs whether to hold, sell, develop or lease, to find the move that does the most for the portfolio.</p>
+      </li>
+    </ol>
   </section>
 
   <section class="wrap uses">
     <div class="section-head">
-      <h2>What we build.</h2>
+      <h2>One more analyst on the team.</h2>
     </div>
     <div class="use-grid">
       <article class="use">
-        <span class="tag">Lease abstraction</span>
-        <h3>Key terms from every lease.</h3>
-        <p>Rents, escalations, options, expiries and tenant obligations extracted from each lease and amendment, with links back to the clause.</p>
+        <span class="tag">Learns</span>
+        <h3>Gets better with your feedback.</h3>
+        <p>When your investment committee overrules a view or an analyst adjusts an assumption, the agent learns from it and moves closer to your house view.</p>
       </article>
       <article class="use">
-        <span class="tag">Rent rolls</span>
-        <h3>One format, whatever the source.</h3>
-        <p>Rent rolls from different managers and systems normalized into a single structure you can compare across properties.</p>
+        <span class="tag">Traceable</span>
+        <h3>Every number has a source.</h3>
+        <p>Each figure links back to the lease clause, cost report or statement it came from, so your team can check the work in seconds.</p>
       </article>
       <article class="use">
-        <span class="tag">Underwriting</span>
-        <h3>Operating statements, ready to model.</h3>
-        <p>Income and expense lines extracted and mapped to your chart of accounts, so underwriting starts from clean numbers.</p>
-      </article>
-      <article class="use">
-        <span class="tag">Asset monitoring</span>
-        <h3>The whole portfolio, tracked.</h3>
-        <p>Occupancy, NOI and upcoming lease expiries tracked across properties, with changes flagged as new reports arrive.</p>
+        <span class="tag">Surveillance</span>
+        <h3>Every asset, watched.</h3>
+        <p>Rent rolls, cost reports and market data are re-checked as they arrive, so changes in a property's outlook surface early.</p>
       </article>
     </div>
   </section>
