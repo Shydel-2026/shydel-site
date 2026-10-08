@@ -10,11 +10,11 @@ python -m http.server 8000
 
 ## Pages
 
-The top menu is Home · Platform ▾ · Assets ▾ · About. Platform and Assets are dropdowns; each of their pages also has a row of section links under the menu.
+The top menu is Home · Platform · About. Platform has two pages, Overview and Assets, each with its own tabs.
 
 - `index.html` — home
-- Platform: `platform.html` (overview), `platform-board.html`, `platform-analysis.html` (18 stages, comparison table, scorecard), `platform-memory.html`, `platform-data.html`
-- Assets: `public-equities.html`, `financials.html`, `fixed-income.html`, `private-equity.html`, `real-estate.html`
+- `platform.html` — the overview, with tabs for Board, Analysis (18 stages, comparison table, scorecard), Memory and Data; `platform.html#memory` opens that tab
+- `assets.html` — a tab per asset class (public equities, financials, fixed income, private equity, real estate); `assets.html#real-estate` opens that tab
 - `about.html`
 
 All pages share `styles.css` and `site.js` (tabs, dropdowns, stage pop-ups, screenshot lightbox; everything degrades to plain content without JS).

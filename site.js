@@ -12,9 +12,15 @@
     drop.addEventListener("keydown", function (e) { if (e.key === "Escape") { set(false); btn.focus(); } });
   });
 
+  // ---- Section tab row: on narrow screens it scrolls sideways, so bring the current tab into view
+  var cur = document.querySelector(".subnav [aria-current='page']");
+  if (cur && cur.parentElement.scrollWidth > cur.parentElement.clientWidth) {
+    cur.parentElement.scrollLeft = cur.offsetLeft - 16;
+  }
+
   // ---- Tabs: [role=tablist] > [role=tab][aria-controls], panels toggled with `hidden`
   document.querySelectorAll(".ui-tabs").forEach(function (root) {
-    var tabs = Array.prototype.slice.call(root.querySelectorAll(":scope > .ui-tablist > [role=tab]"));
+    var tabs = Array.prototype.slice.call(root.querySelectorAll(":scope > .ui-tablist > [role=tab], :scope > .wrap > .ui-tablist > [role=tab]"));
     if (!tabs.length) return;
     function select(tab, focus) {
       tabs.forEach(function (t) {
@@ -25,6 +31,12 @@
         if (panel) panel.hidden = !on;
       });
       if (focus) tab.focus();
+      // a tab row that scrolls sideways on small screens keeps the selected tab in view
+      var row = tab.parentElement;
+      if (row.scrollWidth > row.clientWidth) {
+        var left = tab.offsetLeft - row.offsetLeft, right = left + tab.offsetWidth;
+        if (left < row.scrollLeft || right > row.scrollLeft + row.clientWidth) row.scrollLeft = left - 16;
+      }
     }
     tabs.forEach(function (t, i) {
       t.addEventListener("click", function () { select(t); });
@@ -36,6 +48,23 @@
       });
     });
     var initial = tabs.filter(function (t) { return t.getAttribute("aria-selected") === "true"; })[0] || tabs[0];
+    // tabs that follow the address bar: assets.html#real-estate opens that tab, and clicking updates the hash
+    if (root.hasAttribute("data-hash")) {
+      var fromHash = function () {
+        var id = location.hash.slice(1);
+        return tabs.filter(function (t) { return t.getAttribute("aria-controls") === id; })[0];
+      };
+      if (fromHash()) {
+        initial = fromHash();
+        // the hash names a panel; keep the page at the top so the tab row stays in view
+        window.addEventListener("load", function () { window.scrollTo(0, 0); });
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      }
+      tabs.forEach(function (t) {
+        t.addEventListener("click", function () { history.replaceState(null, "", "#" + t.getAttribute("aria-controls")); });
+      });
+      window.addEventListener("hashchange", function () { var t = fromHash(); if (t) select(t); });
+    }
     select(initial);
   });
 
