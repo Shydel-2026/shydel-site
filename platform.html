@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platform — Shydel</title>
+  <meta name="description" content="Inside the Shydel Agent: a portfolio board across asset classes, an 18-stage analysis on every company, weighted scorecards, working and long-term memory, and data from SEC EDGAR, Financial Modeling Prep, Yahoo Finance and company filings.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap header">
+  <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
+  <nav class="nav">
+    <a href="index.html" class="nav-link nav-keep">Home</a>
+    <a href="platform.html" class="nav-link nav-keep" aria-current="page">Platform</a>
+    <a href="public-equities.html" class="nav-link nav-keep">Assets</a>
+    <a href="about.html" class="nav-link nav-keep">About</a>
+    <a href="#contact" class="pill pill-dark">Contact</a>
+  </nav>
+</header>
+<nav class="wrap subnav" aria-label="Platform"><a href="platform.html" class="subnav-link" aria-current="page" style="--c: var(--ink)"><i></i>Overview</a><a href="platform-board.html" class="subnav-link" style="--c: var(--eq)"><i></i>The board</a><a href="platform-analysis.html" class="subnav-link" style="--c: var(--pe)"><i></i>The analysis</a><a href="platform-memory.html" class="subnav-link" style="--c: var(--fn)"><i></i>Memory</a><a href="platform-data.html" class="subnav-link" style="--c: var(--fi)"><i></i>Data and tools</a></nav>
+
+<main>  <!-- Hero -->
+  <section class="wrap page-hero hero-tight">
+    <span class="tag">The platform</span>
+    <h1>One analyst for the <span class="accent">whole portfolio.</span></h1>
+    <div class="hero-grid">
+      <p class="lede">Shydel Agent is an AI analyst that works alongside your team. You talk to it in plain language. It pulls the filings, works through eighteen analysis stages in order, writes the thesis, valuation and scorecard cards, and places the company on your portfolio board. Every number it gives you points back to the filing it came from.</p>
+      <ul class="hero-points">
+        <li><b>Ask, or plan first.</b> The reply is written for your decision; retrieval, reasoning and learning are kept in the Usage tab.</li>
+        <li><b>Correct it in place.</b> Override a number or a rule, give the why, and it learns from the correction.</li>
+        <li><b>Record with a gate.</b> Writing a thesis or moving a company on the board waits for your confirmation.</li>
+      </ul>
+    </div>
+  </section>
+  <section class="wrap hero-shot">
+    <figure class="frame" style="--hue: var(--eq)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">shydel agent · session · Open Text (OTEX.TO)</span></div>
+<img src="assets/app/chat.webp" alt="The Shydel Agent chat. The agent has finished a full analysis and reports the verdict, bear, base and bull values, a buy-below price and a target weight, with a citation to the SEC filing." width="2000" height="1250" loading="eager">
+</figure>
+  </section>
+
+
+  <section class="wrap plat-cards">
+    <a href="platform-board.html" class="plat-card" style="--c: var(--eq)"><span class="tag">The board</span><p>Every company in the book on one board: a lane per asset class, four columns, every holding a card you can open.</p><span class="asset-more">The board →</span></a>
+    <a href="platform-analysis.html" class="plat-card" style="--c: var(--pe)"><span class="tag">The analysis</span><p>Eighteen ordered stages with cited findings, then the thesis, the valuation and a weighted scorecard.</p><span class="asset-more">The analysis →</span></a>
+    <a href="platform-memory.html" class="plat-card" style="--c: var(--fn)"><span class="tag">Memory</span><p>Working memory for the session, long-term memory for the firm, and a learning loop gated on your why.</p><span class="asset-more">Memory →</span></a>
+    <a href="platform-data.html" class="plat-card" style="--c: var(--fi)"><span class="tag">Data and tools</span><p>Filings from EDGAR and company sites, market data with fallbacks, macro rates, documents, all cited.</p><span class="asset-more">Data and tools →</span></a>
+  </section>
+
+  <!-- Deployment -->
+  <section class="band-white plat-band">
+    <div class="wrap zig">
+      <div class="zig-text">
+        <span class="tag">Deployment</span>
+        <h2>Runs in your environment.</h2>
+        <p>Your model, your keys, your data directory. Every action is written to an audit ledger, and anything that changes the book waits for your confirmation. Nothing leaves the environment you choose to run it in.</p>
+      </div>
+      <div class="zig-media facts">
+        <div class="fact" style="--i: 0; --c: var(--pe)"><b>Your model, your keys</b><p>Runs on the Claude CLI by default. Other models connect through LiteLLM. Data stays in a directory you control.</p></div>
+        <div class="fact" style="--i: 1; --c: var(--fi)"><b>An audit ledger</b><p>Every action is recorded. Writing a thesis, recording an analysis or moving a company on the board is gated behind your confirmation.</p></div>
+        <div class="fact" style="--i: 2; --c: var(--eq)"><b>Five asset classes, one board</b><p>Public equities, financials, fixed income, private equity and real estate share one board, one analysis and one memory. Each class gets its own playbook.</p></div>
+        <div class="fact" style="--i: 3; --c: var(--re)"><b>Built with you</b><p>We map your workflows, seed the memory with your framework, deploy it alongside your team and keep improving it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="cta">
+      <h2>See it on your portfolio.</h2>
+      <div class="cta-side">
+        <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-light pill-lg">Book an intro call →</a>
+        <a href="mailto:admin@shydel.com" class="cta-email">admin@shydel.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Shydel</span>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="platform.html">Platform</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="financials.html">Financials</a>
+    <a href="fixed-income.html">Fixed income</a>
+    <a href="private-equity.html">Private equity</a>
+    <a href="real-estate.html">Real estate</a>
+    <a href="about.html">About</a>
+  </nav>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

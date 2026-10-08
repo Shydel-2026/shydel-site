@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += " js";</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,132 +18,205 @@
   <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
   <nav class="nav">
     <a href="index.html" class="nav-link nav-keep">Home</a>
-    <a href="private-equity.html" class="nav-link">Private equity</a>
-    <a href="real-estate.html" class="nav-link" aria-current="page">Real estate</a>
-    <a href="public-equities.html" class="nav-link">Public equities</a>
-    <a href="fixed-income.html" class="nav-link">Fixed income</a>
+    <a href="platform.html" class="nav-link nav-keep">Platform</a>
+    <a href="public-equities.html" class="nav-link nav-keep" aria-current="page">Assets</a>
     <a href="about.html" class="nav-link nav-keep">About</a>
     <a href="#contact" class="pill pill-dark">Contact</a>
   </nav>
 </header>
+<nav class="wrap subnav" aria-label="Asset classes"><a href="public-equities.html" class="subnav-link" style="--c: var(--eq)"><i></i>Public equities</a><a href="financials.html" class="subnav-link" style="--c: var(--fn)"><i></i>Financials</a><a href="fixed-income.html" class="subnav-link" style="--c: var(--fi)"><i></i>Fixed income</a><a href="private-equity.html" class="subnav-link" style="--c: var(--pe)"><i></i>Private equity</a><a href="real-estate.html" class="subnav-link" aria-current="page" style="--c: var(--re)"><i></i>Real estate</a></nav>
 
 <main>
   <section class="wrap page-hero">
-    <span class="tag">02 — Real estate</span>
+    <span class="tag tag-re">05 — Real estate</span>
     <h1>Real estate is a portfolio. <span class="accent">Run it like one.</span></h1>
-    <p class="lede">We build agentic systems that underwrite every property, project and lease the way your team does, and weigh each one against everything you already own.</p>
+    <p class="lede">REITs and property companies get their own lane on the board and their own rules. The agent reads leases, escalators and tenant concentration in stage eleven, measures return on capital on the property, and scores each asset against the mix you already hold.</p>
+    <div class="hero-actions">
+      <a href="#inapp" class="pill pill-accent">See it in the platform ↓</a>
+      <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-outline">Book an intro call</a>
+    </div>
   </section>
 
   <section class="band-sand">
     <div class="wrap split">
       <div>
-        <span class="tag">Every property is a position</span>
-        <h2>One fund, many strategies, a few cities.</h2>
-        <p>A real estate fund or REIT is a portfolio like any other. It may own commercial and residential buildings outright, usually concentrated in a handful of cities. It may buy land and develop it, either to sell or to hold and lease. Each strategy has its own economics and its own risks, and every new asset changes the risk of the whole.</p>
-        <p>The agent is trained on how your firm underwrites: target yields, cost and occupancy assumptions, development hurdles. Like the rest of our systems, it doesn't stop at pass or fail. It looks for what could break the plan years out and gives a confidence range that each asset delivers what it was underwritten to do.</p>
-        <p>Then it asks whether the asset makes the portfolio better. Will it add to funds from operations, spread risk across cities and property types, or pile more onto exposure you already carry?</p>
-        <div class="chips">
-          <span class="chip">Residential</span>
-          <span class="chip">Commercial</span>
-          <span class="chip">Land &amp; development</span>
-          <span class="chip">Build to sell</span>
-          <span class="chip">Build to rent</span>
+        <span class="tag">A portfolio of properties</span>
+        <h2>REITs on the same board, read on property terms.</h2>
+        <p>A REIT is routed to the real estate lane the moment it is added, and the rules for that lane apply from the first stage. Investment property is counted in the capital base, so return on capital is measured on the buildings. FFO and AFFO, not net income, are the cash earnings. Stage eleven reads the leases: terms, escalators and their caps, expiries, tenant concentration, and property values against carrying value.</p>
+        <p>The scorecard weighs the same way as everywhere else: price first, return on capital second, then quality, growth, balance sheet and management. Below: an analysis of VICI Properties, as the agent recorded it. Click any stage for its finding.</p>
+        <div class="app" style="margin-top: 28px">
+<div class="app-card">
+<span class="label">Goal</span>
+<p class="app-goal">Run a full principled analysis of VICI Properties (VICI) for the portfolio: classify the company, work every analysis stage with cited findings, write thesis, valuation and scorecard cards, ground the decision in current portfolio weights, and record the thesis and analysis on the board.</p>
+<div class="app-chips"><span class="app-chip accent">VICI</span><span class="app-chip ctype">Quality franchise (Buffett / Greenwald)</span><span class="app-chip verdict buy">buy</span><span class="app-chip done">analysis complete</span></div>
+<div class="stage-track" aria-label="Analysis stages">
+<button type="button" class="stage-step todo optional" data-pop-kicker="Stage 1 · Sourcing and filings" data-pop-title="Idea sourcing and screening" data-pop-state="optional, not run" data-pop-body="Not run: the analyst handed over the company." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="1. Idea sourcing and screening"><i>1</i><span>Ideas</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 2 · Sourcing and filings" data-pop-title="Filings and accounting quality" data-pop-state="done" data-pop-body="Filed 10-K (sec:0001705696-26-000034). Classified as a quality franchise. Most leases are booked as sales-type and financing receivables, so FFO equals net income and AFFO (US$2.38 a share in FY2025) is the cash earnings measure." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="2. Filings and accounting quality"><i>✓</i><span>Filings quality</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 3 · The statements" data-pop-title="Balance sheet" data-pop-state="done" data-pop-body="103 assets (63 gaming, 40 other experiential), about 130M square feet, held as financing receivables and investment property. Book value US$26.15 a share against a US$22.73 price: 0.87× book." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="3. Balance sheet"><i>✓</i><span>Balance sheet</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 4 · The statements" data-pop-title="Cash flow statement" data-pop-state="done" data-pop-body="AFFO US$2.38 a share in FY2025, about US$2.50 forward: a 10.5% AFFO yield. Dividend US$1.82 forward, an 8% yield, covered by AFFO every year." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="4. Cash flow statement"><i>✓</i><span>Cash flow</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 5 · The statements" data-pop-title="Income statement" data-pop-state="done" data-pop-body="Triple-net leases: the tenant pays all property costs, so rental revenue flows almost entirely to operating income. CPI-linked escalators on 15 of 17 leases." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="5. Income statement"><i>✓</i><span>Income stmt</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 6 · The statements" data-pop-title="Debt tables" data-pop-state="done" data-pop-body="Investment-grade balance sheet: 99% fixed-rate debt, laddered maturities, net debt to EBITDA 5.0×." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="6. Debt tables"><i>✓</i><span>Debt</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 7 · The statements" data-pop-title="Commitments and contingencies" data-pop-state="done" data-pop-body="Master-lease cross-default and parent guarantees; development and loan commitments, including Golden at US$1.16bn and 7.5%." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="7. Commitments and contingencies"><i>✓</i><span>Commitments</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 8 · The statements" data-pop-title="Receivables and provision for credit losses" data-pop-state="done" data-pop-body="100% rent collection since the 2017 IPO, including through covid; lease receivables carried at amortised cost." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="8. Receivables and provision for credit losses"><i>✓</i><span>Receivables</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 9 · The statements" data-pop-title="Market and segment analysis" data-pop-state="done" data-pop-body="Two tenants, MGM (38%) and Caesars (36%), are about 74% of lease revenue. Gaming is the single industry, with a growing non-gaming experiential book." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="9. Market and segment analysis"><i>✓</i><span>Segments</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 10 · The statements" data-pop-title="Inventory analysis" data-pop-state="skipped" data-pop-body="No inventory at a net-lease REIT." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="10. Inventory analysis"><i>–</i><span>Inventory</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 11 · The statements" data-pop-title="Leases and real estate analysis" data-pop-state="done" data-pop-body="Weighted lease term 39.6 years; 100% occupancy since inception; escalators capped near 3%. The Caesars Regional Master Lease performance is the overhang the market is pricing." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="11. Leases and real estate analysis"><i>✓</i><span>Leases &amp; RE</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 12 · The statements" data-pop-title="Depreciation analysis" data-pop-state="skipped" data-pop-body="Depreciation is not meaningful where leases are financing receivables; AFFO is the cash measure." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="12. Depreciation analysis"><i>–</i><span>Depreciation</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 13 · The business" data-pop-title="Business quality and moat" data-pop-state="done" data-pop-body="Irreplaceable, licence-gated trophy real estate: Caesars Palace, MGM Grand, the Venetian. Rent is parent-guaranteed and cross-defaulted." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="13. Business quality and moat"><i>✓</i><span>Moat</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 14 · The business" data-pop-title="Management and governance" data-pop-state="done" data-pop-body="Internally managed, with a clean capital-allocation record; AFFO and the dividend have risen every year." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="14. Management and governance"><i>✓</i><span>Management</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 15 · The decision" data-pop-title="Valuation" data-pop-state="done" data-pop-body="Four methods converge: forward-AFFO multiple (bear US$25, base US$32, bull US$40), dividend discount US$23–34, zero-growth earnings power value US$25–30, NAV at a 6.5–7.5% cap rate US$25–31.|Probability-weighted US$29.9 against US$22.73." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="15. Valuation"><i>✓</i><span>Valuation</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 16 · The decision" data-pop-title="Risk and margin of safety" data-pop-state="done" data-pop-body="Two-tenant concentration; a top-two tenant bankruptcy with a permanent rent reset (a tail, about 10%); high rates throttling accretive growth; inflation above the ~3% escalator caps.|Chance of a permanent loss: 12%." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="16. Risk and margin of safety"><i>✓</i><span>Risk / MoS</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 17 · The decision" data-pop-title="Decision, sizing and portfolio fit" data-pop-state="done" data-pop-body="Buy. Initiate about 4%, buy below US$25, trim above US$38, add toward 5% on weakness.|Role: first REIT, diversifying US-dollar experiential real-estate income with low correlation to the existing holdings, funded by trimming HMM.A." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="17. Decision, sizing and portfolio fit"><i>✓</i><span>Decision &amp; size</span></button>
+<button type="button" class="stage-step current" data-pop-kicker="Stage 18 · The decision" data-pop-title="Monitoring and selling" data-pop-state="current stage" data-pop-body="Sell triggers: a top-two tenant default that permanently resets rent; a dividend cut; net debt to EBITDA sustained above about 6×; loss of the master-lease cross-default or guarantee protections." data-pop-src="sec:0001705696-26-000034 · cards/thesis_VICI, valuation_VICI, scorecard_VICI · 7 Oct 2026" title="18. Monitoring and selling"><i>18</i><span>Monitor &amp; sell</span></button>
+</div>
+<div class="stage-progress"><i style="width: 100%"></i></div>
+<div class="stage-sum">17 of 17 analysis stages done or skipped · click a stage for its finding</div>
+</div>
         </div>
       </div>
-
-      <figure class="stack-card">
-        <figcaption>Illustrative · one development, scored against your portfolio</figcaption>
-
-        <div class="stack-title">Portfolio by city, before and after</div>
-        <div class="mix">
-          <div class="mix-row"><span>Today</span><span class="mix-bar"><i style="--w: 38; --c: #2340D9"></i><i style="--w: 27; --c: #2FA36B"></i><i style="--w: 21; --c: #C98A1B"></i><i style="--w: 14; --c: #8C5CD6"></i></span></div>
-          <div class="mix-row"><span>After</span><span class="mix-bar"><i style="--w: 35; --c: #2340D9"></i><i style="--w: 25; --c: #2FA36B"></i><i style="--w: 27; --c: #C98A1B"></i><i style="--w: 13; --c: #8C5CD6"></i></span></div>
-          <div class="mix-legend"><span style="--c: #2340D9">City A</span><span style="--c: #2FA36B">City B</span><span style="--c: #C98A1B">City C</span><span style="--c: #8C5CD6">City D</span></div>
-        </div>
-        <p class="candidate"><strong>180-unit mid-rise, City C</strong> · land bought, build to rent</p>
-
-        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
-        <div class="score-group g1">The project</div>
-        <div class="score-row"><span class="score-factor">Construction cost</span><span class="score-val">$212 <small>vs $240 / sq ft</small></span><span class="effect pos" style="--w: .5"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Yield on cost</span><span class="score-val">6.8% <small>vs 5.2% cap rate</small></span><span class="effect pos" style="--w: .65"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Stabilized occupancy</span><span class="score-val">94% <small>market 91%</small></span><span class="effect pos" style="--w: .3"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">AFFO per unit</span><span class="score-val">+1.8%</span><span class="effect pos" style="--w: .4"><i></i></span></div>
-
-        <div class="score-group g2">What could break the plan</div>
-        <div class="score-row"><span class="score-factor">Cost overruns<span class="hint">Labour costs rising fast</span></span><span class="score-val">+9% / yr</span><span class="effect neg" style="--w: .4"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Slower lease-up<span class="hint">New supply in the submarket</span></span><span class="score-val">2,400 units</span><span class="effect neg" style="--w: .45"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Financing<span class="hint">Construction loan to refinance</span></span><span class="score-val">Rate reset 2027</span><span class="effect neg" style="--w: .3"><i></i></span></div>
-        <div class="conf conf-sub">
-          <div class="conf-head"><span>Delivers its underwriting</span><span class="conf-val">66% <span>(55–76%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 55%; width: 21%;"></span><span class="conf-point" style="left: 66%;"></span></div>
-        </div>
-
-        <div class="score-group g3">Effect on your portfolio</div>
-        <div class="score-row"><span class="score-factor">Property type mix</span><span class="score-val">Less office</span><span class="effect pos" style="--w: .5"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Rents vs your other cities</span><span class="score-val">Low correlation</span><span class="effect pos" style="--w: .45"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">City concentration</span><span class="score-val">City C 21% → 27%</span><span class="effect neg" style="--w: .35"><i></i></span></div>
-
-        <div class="conf conf-total">
-          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">71% <span>(62–79%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 62%; width: 17%;"></span><span class="conf-point" style="left: 71%;"></span></div>
-          <p class="fi-verdict"><span class="verdict">Diversifier</span> Builds below market cost and balances the office exposure, but new supply and a 2027 refinancing keep confidence in check.</p>
-        </div>
-      </figure>
+      <div class="app">
+<div class="app-card">
+<h4><span>VICI Properties — experiential/gaming triple-net REIT franchise</span><span class="label">Reasons for and against</span></h4>
+<div class="final-score pos"><div class="fs-num">7.7<span>/ 10</span></div><div><b>Final score</b> — the reasons for clearly outweigh the reasons against.<div class="hint">Reasons for weigh 5.10, reasons against 1.50; the score is the share on the “for” side.</div></div></div>
+<div class="sc-rows">
+<div class="sc-row"><span>Irreplaceable, license-gated trophy real estate (Caesars Palace, MGM Grand, Venetian)</span><span class="sc-num pos">+0.90</span><span class="sc-effect"><i class="pos" style="--e: 0.9"></i></span></div>
+<div class="sc-row"><span>39.6-year weighted lease term, master-lease cross-default, 100% occupancy since inception</span><span class="sc-num pos">+0.90</span><span class="sc-effect"><i class="pos" style="--e: 0.9"></i></span></div>
+<div class="sc-row"><span>Contractual CPI-linked rent escalators (15 of 17 leases)</span><span class="sc-num pos">+0.60</span><span class="sc-effect"><i class="pos" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span>AFFO yield 10.5% / price to AFFO 9.5× — cheap against about 15× history and net-lease peers</span><span class="sc-num pos">+0.80</span><span class="sc-effect"><i class="pos" style="--e: 0.8"></i></span></div>
+<div class="sc-row"><span>Price below the zero-growth earnings power value and below book — margin of safety</span><span class="sc-num pos">+0.80</span><span class="sc-effect"><i class="pos" style="--e: 0.8"></i></span></div>
+<div class="sc-row"><span>Investment-grade balance sheet: 99% fixed-rate debt, net debt/EBITDA 5.0×, laddered</span><span class="sc-num pos">+0.50</span><span class="sc-effect"><i class="pos" style="--e: 0.5"></i></span></div>
+<div class="sc-row"><span>Internally managed, clean capital-allocation record, AFFO and dividend up every year</span><span class="sc-num pos">+0.60</span><span class="sc-effect"><i class="pos" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span>Two-tenant concentration: MGM 38% + Caesars 36% = about 74% of revenue</span><span class="sc-num neg">−0.70</span><span class="sc-effect"><i class="neg" style="--e: 0.7"></i></span></div>
+<div class="sc-row"><span>Single-industry (gaming) and Caesars Regional performance overhang</span><span class="sc-num neg">−0.40</span><span class="sc-effect"><i class="neg" style="--e: 0.4"></i></span></div>
+<div class="sc-row"><span>Rising cost of capital throttles accretive external growth; escalator caps (~3%) cap inflation upside</span><span class="sc-num neg">−0.40</span><span class="sc-effect"><i class="neg" style="--e: 0.4"></i></span></div>
+</div>
+<div class="score-notes">
+<div class="score-note role"><b>Role in the portfolio</b><span>First REIT / diversifying real-estate income holding (about 8% yield), initiate about 4%</span></div>
+<div class="score-note verdict"><b>Verdict</b><span>BUY — initiate about 4%, buy below about $25, add toward 5% on weakness</span></div>
+<div class="score-note"><b>Chance of a permanent loss</b><span>12%</span></div>
+</div>
+<div class="app-foot">Recorded by the agent, 7 Oct 2026 · sec:0001705696-26-000034 · steps/0015, 0016, 0030, 0032 · yahoo VICI quote 2026-10-06</div>
+</div>
+      </div>
     </div>
   </section>
 
-  <section class="wrap deep">
+  <section class="wrap stages-section">
     <div class="section-head">
-      <h2>What it does on every asset.</h2>
-      <p>The work a careful asset manager or acquisitions analyst would do, across every property and project, each time new numbers arrive.</p>
+      <h2>Eighteen stages, in order.</h2>
+      <p>The same eighteen stages, read for a REIT. The balance sheet counts the property, the cash flow stage reads AFFO, and stage eleven is the lease schedule.</p>
     </div>
-    <ol class="process">
-      <li>
-        <span class="process-n">01</span>
-        <h3>Reads every document</h3>
-        <p>Leases, rent rolls, operating statements, appraisals, construction contracts and loan agreements, with every term linked back to the page it came from.</p>
-      </li>
-      <li>
-        <span class="process-n">02</span>
-        <h3>Finds the real cash flow</h3>
-        <p>Net operating income is cleaned of one-off items, then carried through to FFO and AFFO, the measures of cash the portfolio actually generates after the spending needed to keep buildings competitive.</p>
-      </li>
-      <li>
-        <span class="process-n">03</span>
-        <h3>Underwrites acquisitions</h3>
-        <p>Price against replacement cost and comparable sales, going-in yield against your hurdle, and in-place rents against the market, to see whether there's upside or a rent roll that's about to reset lower.</p>
-      </li>
-      <li>
-        <span class="process-n">04</span>
-        <h3>Tracks development</h3>
-        <p>Land, permits, construction budget, cost to complete and schedule, checked against each new cost report. Overruns and delays are flagged while there is still time to act.</p>
-      </li>
-      <li>
-        <span class="process-n">05</span>
-        <h3>Optimizes operations</h3>
-        <p>Operating cost per unit and per square foot against comparable buildings, occupancy, rent growth and tenant retention, to find where each property is leaving income on the table.</p>
-      </li>
-      <li>
-        <span class="process-n">06</span>
-        <h3>Watches the leases</h3>
-        <p>Expiries bunching into the same year, reliance on a few large tenants, and the credit of the tenants themselves, all tracked across the portfolio.</p>
-      </li>
-      <li>
-        <span class="process-n">07</span>
-        <h3>Looks for trouble years ahead</h3>
-        <p>New supply coming to a submarket, construction and operating costs outrunning rents, loans that will refinance at higher rates, and shifts in demand for a property type.</p>
-      </li>
-      <li>
-        <span class="process-n">08</span>
-        <h3>Models the range of outcomes</h3>
-        <p>Scenarios for rents, occupancy, costs and exit values give a confidence range that each asset delivers its underwriting, and the probability of loss, updated as new figures come in.</p>
-      </li>
-      <li>
-        <span class="process-n">09</span>
-        <h3>Balances the portfolio</h3>
-        <p>Exposure by city, property type, strategy and tenant, and how each asset moves with the rest. It also weighs whether to hold, sell, develop or lease, to find the move that does the most for the portfolio.</p>
-      </li>
-    </ol>
+<div class="ui-tabs">
+<div class="ui-tablist" role="tablist">
+<button class="ui-tab" role="tab" id="re-stages-g0-tab" aria-controls="re-stages-g0" aria-selected="true">Sourcing and filings <span class="count">01–02</span></button>
+<button class="ui-tab" role="tab" id="re-stages-g1-tab" aria-controls="re-stages-g1" aria-selected="false">The statements <span class="count">03–12</span></button>
+<button class="ui-tab" role="tab" id="re-stages-g2-tab" aria-controls="re-stages-g2" aria-selected="false">The business <span class="count">13–14</span></button>
+<button class="ui-tab" role="tab" id="re-stages-g3-tab" aria-controls="re-stages-g3" aria-selected="false">The decision <span class="count">15–18</span></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-stages-g0" aria-labelledby="re-stages-g0-tab">
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--pe)"><i>1</i><div><b>Idea sourcing and screening <small>optional</small></b><p>Screens on AFFO yield, price to book and implied cap rate. A REIT is routed to the real estate lane automatically.</p></div></div>
+<div class="stage-item" style="--g: var(--pe)"><i>2</i><div><b>Filings and accounting quality</b><p>The 10-K, the supplemental and the lease schedule; the company classified. Most net-lease REITs book leases as financing receivables, so FFO equals net income.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-stages-g1" aria-labelledby="re-stages-g1-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--eq)"><i>3</i><div><b>Balance sheet</b><p>Investment property at cost and at value. It is counted in the capital base, so return on capital is measured on the buildings.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>4</i><div><b>Cash flow statement</b><p>FFO and AFFO: cash earnings after the capital spending needed to keep buildings leased; dividend coverage.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>5</i><div><b>Income statement</b><p>Rental revenue, net operating income and operating margin, with one-off gains on sales removed.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>6</i><div><b>Debt tables</b><p>Secured against unsecured, fixed against floating, the maturity ladder, net debt to EBITDA.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>7</i><div><b>Commitments and contingencies</b><p>Development commitments, ground leases and guarantees.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>8</i><div><b>Receivables and provision for credit losses</b><p>Tenant receivables, straight-line rent and the provision against them; rent collection history.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>9</i><div><b>Market and segment analysis</b><p>Property type, city and tenant mix; occupancy and rent by segment.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>10</i><div><b>Inventory analysis</b><p>Skipped at a REIT, with the reason kept.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>11</i><div><b>Leases and real estate analysis</b><p>Lease terms, escalators and caps, expiries, tenant concentration, and property values against carrying value.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>12</i><div><b>Depreciation analysis</b><p>Book depreciation against real wear, and why FFO adds it back.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-stages-g2" aria-labelledby="re-stages-g2-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--re)"><i>13</i><div><b>Business quality and moat</b><p>Irreplaceable locations, long leases, tenant credit and the licences that keep competitors out.</p></div></div>
+<div class="stage-item" style="--g: var(--re)"><i>14</i><div><b>Management and governance</b><p>Internal or external management, acquisitions at or above cap rates, dilution, and the dividend record.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-stages-g3" aria-labelledby="re-stages-g3-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--fi)"><i>15</i><div><b>Valuation</b><p>Forward-AFFO multiple, dividend discount, zero-growth earnings power value and NAV at a range of cap rates.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>16</i><div><b>Risk and margin of safety</b><p>Tenant default, rate risk, escalator caps against inflation, and the chance of a permanent loss.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>17</i><div><b>Decision, sizing and portfolio fit</b><p>Weight, buy-below and trim-above prices, and what the asset does to the mix by city, type and tenant.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>18</i><div><b>Monitoring and selling</b><p>Occupancy, rent collection, leverage and dividend coverage, re-checked each quarter.</p></div></div>
+</div>
+</div>
+</div>
+  </section>
+
+  <section class="band-dark mem-section" id="memory">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">Memory and skills</span>
+        <h2>What the agent brings to each stage.</h2>
+        <p>Real estate works from the firm-wide rules and the property skills: leases treated as debt, reproduction cost, unit build-out, AFFO. Your own underwriting standards for REITs and property companies sit in the real estate scope.</p>
+      </div>
+      <div class="split mem-split">
+        <div>
+<div class="mx-kinds">
+            <div><b>Episodes</b><span>Decisions, corrections and approvals, recorded as they happen.</span></div>
+            <div><b>Rules</b><span>Value and process rules, each with a why and a confidence.</span></div>
+            <div><b>Skills</b><span>Written procedures, one per task: normalise earnings, read covenants, value a REIT.</span></div>
+            <div><b>Knowledge</b><span>Framework notes and company files the agent keeps between sessions.</span></div>
+          </div>
+          <p class="mem-note">Each REIT analysis adds episodes, and repeated corrections become rule candidates for the real estate scope. Nothing becomes a rule until you approve it with a why.</p>
+          <a href="platform-memory.html" class="pill pill-light">How memory works →</a>
+        </div>
+<div class="mx" style="--hue: var(--re)"><details class="mx-stage" open><summary><span class="mx-n">3</span><b>Balance sheet</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Step 1 of any Greenwald-style valuation; essential for commodity, cyclical, asset-heavy or distressed companies, and as the check on any claimed franchise." data-pop-kicker="Skill · Balance sheet" data-pop-title="asset-value-reproduction-cost" data-pop-body="Step 1 of any Greenwald-style valuation; essential for commodity, cyclical, asset-heavy or distressed companies, and as the check on any claimed franchise." data-pop-src="data/memory/procedural/skills/public_equities/asset-value-reproduction-cost/SKILL.md · status: active" role="button" tabindex="0">asset-value-reproduction-cost</span></div><div class="mx-rule"><span class="label">skill</span>Step 1 of any Greenwald-style valuation; essential for commodity, cyclical, asset-heavy or distressed companies, and as the check on any claimed franchise.</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">9</span><b>Market and segment analysis</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Whenever EPV materially exceeds asset value, or a thesis depends on margins/returns staying above the cost of capital." data-pop-kicker="Skill · Market and segment analysis" data-pop-title="franchise-moat-assessment" data-pop-body="Whenever EPV materially exceeds asset value, or a thesis depends on margins/returns staying above the cost of capital." data-pop-src="data/memory/procedural/skills/public_equities/franchise-moat-assessment/SKILL.md · status: active" role="button" tabindex="0">franchise-moat-assessment</span></div><div class="mx-rule"><span class="label">skill</span>Whenever EPV materially exceeds asset value, or a thesis depends on margins/returns staying above the cost of capital.</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">11</span><b>Leases and real estate analysis</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Retailers, airlines, railroads, trucking, restaurants and any firm with large lease commitments; also when comparing an owner of assets with a lessee peer. Note: Stickney&#x27;s text predates ASC 842 / IFRS 16 (effective…" data-pop-kicker="Skill · Leases and real estate analysis" data-pop-title="lease-adjustment-to-debt" data-pop-body="Retailers, airlines, railroads, trucking, restaurants and any firm with large lease commitments; also when comparing an owner of assets with a lessee peer. Note: Stickney&#x27;s text predates ASC 842 / IFRS 16 (effective 2019), which now put most leases on the balance sheet as right-of-use assets and lease liabilities; the procedure still matters for pre-2019 history, IFRS/GAAP compari" data-pop-src="data/memory/procedural/skills/public_equities/lease-adjustment-to-debt/SKILL.md · status: active" role="button" tabindex="0">lease-adjustment-to-debt</span></div><div class="mx-rule"><span class="label">skill</span>Retailers, airlines, railroads, trucking, restaurants and any firm with large lease commitments; also when comparing an owner of assets with a lessee peer. Note: Stickney&#x27;s text predates ASC 842 /…</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">12</span><b>Depreciation analysis</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Checking whether reported D&amp;A, depletion and lease or intangible amortisation reflect the real consumption of capital, before computing earning power (Graham and Dodd ch. 34). This deepens the existing &#x27;test…" data-pop-kicker="Skill · Depreciation analysis" data-pop-title="graham-depreciation-and-amortization-review" data-pop-body="Checking whether reported D&amp;A, depletion and lease or intangible amortisation reflect the real consumption of capital, before computing earning power (Graham and Dodd ch. 34). This deepens the existing &#x27;test depreciation adequacy&#x27; rule with the book&#x27;s specific tests." data-pop-src="data/memory/procedural/skills/public_equities/graham-depreciation-and-amortization-review/SKILL.md · status: active" role="button" tabindex="0">graham-depreciation-and-amortization-review</span><span class="mx-skill" title="Whenever EBIT (or EBITDA - capex) is the basis of a valuation and capex or depreciation look unusual; Greenblatt treats this as the step that most often separates a real from an illusory earnings yield. Refines step 2…" data-pop-kicker="Skill · Depreciation analysis" data-pop-title="maintenance-capex-estimation" data-pop-body="Whenever EBIT (or EBITDA - capex) is the basis of a valuation and capex or depreciation look unusual; Greenblatt treats this as the step that most often separates a real from an illusory earnings yield. Refines step 2 of `skill-three-year-value-gap-test`." data-pop-src="data/memory/procedural/skills/public_equities/maintenance-capex-estimation/SKILL.md · status: active" role="button" tabindex="0">maintenance-capex-estimation</span></div><div class="mx-rule"><span class="label">skill</span>Checking whether reported D&amp;A, depletion and lease or intangible amortisation reflect the real consumption of capital, before computing earning power (Graham and Dodd ch. 34). This deepens the…</div><div class="mx-rule"><span class="label">skill</span>Whenever EBIT (or EBITDA - capex) is the basis of a valuation and capex or depreciation look unusual; Greenblatt treats this as the step that most often separates a real from an illusory earnings…</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">15</span><b>Valuation</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="A growing multi-unit business (stores, campuses, clinics, restaurants) where analysts slap a P/E on a short-term growth rate. Greenblatt praised Linda Greenblatt&#x27;s method as &#x27;so logical&#x27; and generalised it with a cohort…" data-pop-kicker="Skill · Valuation" data-pop-title="unit-build-out-valuation" data-pop-body="A growing multi-unit business (stores, campuses, clinics, restaurants) where analysts slap a P/E on a short-term growth rate. Greenblatt praised Linda Greenblatt&#x27;s method as &#x27;so logical&#x27; and generalised it with a cohort matrix." data-pop-src="data/memory/procedural/skills/public_equities/unit-build-out-valuation/SKILL.md · status: active" role="button" tabindex="0">unit-build-out-valuation</span></div><div class="mx-rule"><span class="label">skill</span>A growing multi-unit business (stores, campuses, clinics, restaurants) where analysts slap a P/E on a short-term growth rate. Greenblatt praised Linda Greenblatt&#x27;s method as &#x27;so logical&#x27; and…</div></div></details></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-tint tint-re inapp" id="inapp">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">In the platform</span>
+        <h2>What it looks like in the Shydel Agent.</h2>
+        <p>REITs and property companies get their own lane on the board. Each one goes through the same ordered analysis, with a stage for leases and real estate built in.</p>
+      </div>
+<div class="ui-tabs vertical" style="--hue: var(--re)">
+<div class="ui-tablist" role="tablist" aria-label="Views of the platform">
+<span class="label">In the app</span>
+<button class="ui-tab" role="tab" id="re-view-v0-tab" aria-controls="re-view-v0" aria-selected="true"><b>The answer, in property terms.</b><small>Session · Chat</small></button>
+<button class="ui-tab" role="tab" id="re-view-v1-tab" aria-controls="re-view-v1" aria-selected="false"><b>The lease stage, written up.</b><small>Session · Findings</small></button>
+<button class="ui-tab" role="tab" id="re-view-v2-tab" aria-controls="re-view-v2" aria-selected="false"><b>The key numbers, on the property.</b><small>Portfolio · Card</small></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-view-v0" aria-labelledby="re-view-v0-tab">
+<figure class="frame" style="--hue: var(--re)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">session · chat</span></div>
+<img src="assets/app/re-chat.webp" alt="The agent&#x27;s answer after analysing a REIT: the property portfolio, the leases, AFFO, why it is cheap, the key tenant risk and the verdict." width="1600" height="1472" loading="lazy">
+</figure>
+<div class="panel-text"><h3>The answer, in property terms.</h3><p>For a REIT the agent&#x27;s answer talks the way a property investor does: what the buildings and the leases are, AFFO as the cash earnings, why the market is pricing it where it is, the tenant risk, and the verdict with its scenarios.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-view-v1" aria-labelledby="re-view-v1-tab" hidden>
+<figure class="frame" style="--hue: var(--re)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">overview · findings by stage</span></div>
+<img src="assets/app/re-findings.webp" alt="Findings by stage for a REIT, centred on the leases and real estate stage, with inventory and depreciation skipped and the reason kept." width="1768" height="1675" loading="lazy">
+</figure>
+<div class="panel-text"><h3>The lease stage, written up.</h3><p>Stage eleven is the lease schedule: weighted term, escalators and their caps, cross-default, occupancy. Stages that do not apply to a REIT, like inventory, are skipped with the reason kept.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="re-view-v2" aria-labelledby="re-view-v2-tab" hidden>
+<figure class="frame frame-tall-md" style="--hue: var(--re)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">VICI · opened</span></div>
+<img src="assets/app/drawer-vici.webp" alt="A REIT&#x27;s card opened from the board: price, key numbers for EV/EBIT, P/E and return on capital, and the trend in sales, operating income and cash flow." width="1000" height="1250" loading="lazy">
+</figure>
+<div class="panel-text"><h3>The key numbers, on the property.</h3><p>Open the card for EV/EBIT and P/E, return on capital measured with the property in the capital base, and the trend in sales, operating income and free cash flow.</p></div>
+</div>
+</div>
+      <div class="inapp-foot">
+        <a href="platform.html" class="pill pill-accent">See the whole platform →</a>
+      </div>
+    </div>
   </section>
 
   <section class="wrap uses">
@@ -169,11 +243,12 @@
   </section>
 
   <section class="wrap other">
-    <h2>Other areas we cover</h2>
+    <h2>Other asset classes</h2>
     <div class="other-links">
-      <a href="private-equity.html" class="pill pill-outline">Private equity</a>
       <a href="public-equities.html" class="pill pill-outline">Public equities</a>
+      <a href="financials.html" class="pill pill-outline">Financials</a>
       <a href="fixed-income.html" class="pill pill-outline">Fixed income</a>
+      <a href="private-equity.html" class="pill pill-outline">Private equity</a>
     </div>
   </section>
 
@@ -181,8 +256,8 @@
     <div class="cta">
       <h2>Let's talk about your portfolio.</h2>
       <div class="cta-side">
-        <a href="mailto:admin@shydel.com" class="pill pill-light pill-lg">Book an intro call →</a>
-        <span class="cta-email">admin@shydel.com</span>
+        <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-light pill-lg">Book an intro call →</a>
+        <a href="mailto:admin@shydel.com" class="cta-email">admin@shydel.com</a>
       </div>
     </div>
   </section>
@@ -192,13 +267,16 @@
   <span>© 2026 Shydel</span>
   <nav class="footer-nav">
     <a href="index.html">Home</a>
+    <a href="platform.html">Platform</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="financials.html">Financials</a>
+    <a href="fixed-income.html">Fixed income</a>
     <a href="private-equity.html">Private equity</a>
     <a href="real-estate.html">Real estate</a>
-    <a href="public-equities.html">Public equities</a>
-    <a href="fixed-income.html">Fixed income</a>
     <a href="about.html">About</a>
   </nav>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data and tools — Shydel</title>
+  <meta name="description" content="The agent reaches outside data through its own tools: filings, market data with fallbacks, macro rates and company documents, every figure cited to where it came from.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap header">
+  <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
+  <nav class="nav">
+    <a href="index.html" class="nav-link nav-keep">Home</a>
+    <a href="platform.html" class="nav-link nav-keep" aria-current="page">Platform</a>
+    <a href="public-equities.html" class="nav-link nav-keep">Assets</a>
+    <a href="about.html" class="nav-link nav-keep">About</a>
+    <a href="#contact" class="pill pill-dark">Contact</a>
+  </nav>
+</header>
+<nav class="wrap subnav" aria-label="Platform"><a href="platform.html" class="subnav-link" style="--c: var(--ink)"><i></i>Overview</a><a href="platform-board.html" class="subnav-link" style="--c: var(--eq)"><i></i>The board</a><a href="platform-analysis.html" class="subnav-link" style="--c: var(--pe)"><i></i>The analysis</a><a href="platform-memory.html" class="subnav-link" style="--c: var(--fn)"><i></i>Memory</a><a href="platform-data.html" class="subnav-link" aria-current="page" style="--c: var(--fi)"><i></i>Data and tools</a></nav>
+
+<main>
+  <section class="wrap page-hero hero-tight">
+    <span class="tag">Platform · Data and tools</span>
+    <h1>Filings first. <span class="accent">Then market data.</span></h1>
+    <p class="lede">The agent reaches outside data through its own tools: filings, market data with fallbacks, macro rates and company documents, every figure cited to where it came from.</p>
+  </section>
+
+  <!-- Data -->
+  <section class="band-tint tint-pe plat-band">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">Connected to the data</span>
+        <h2>Filings first. <span class="muted">Market data when it is needed.</span></h2>
+        <p>The agent reaches outside data through grounding tools served over MCP. Fundamentals come from the filings themselves. Prices and estimates come from a vendor, with a fallback chain so a missing key never stops the work. Hurdle rates come from central banks and statistics offices.</p>
+      </div>
+      <div class="src-grid">
+        <div class="src" style="--i: 0; --c: var(--pe)"><span class="src-k">Filings</span><b>SEC EDGAR</b><p>Filing history, 10-K and 10-Q sections, XBRL company facts and full-text search for special situations. Every figure carries its accession number.</p></div>
+        <div class="src" style="--i: 1; --c: var(--eq)"><span class="src-k">Market data</span><b>Financial Modeling Prep</b><p>First choice for quotes, price history, analyst estimates, fundamentals and the screener. Also supplies company logos.</p></div>
+        <div class="src" style="--i: 2; --c: var(--fi)"><span class="src-k">Fallback</span><b>Yahoo Finance</b><p>Quotes, history, ratios and statements for companies outside the SEC, such as TSX names. Unofficial, labelled as such in every citation, and can be switched off.</p></div>
+        <div class="src" style="--i: 3; --c: var(--fi)"><span class="src-k">Fallback</span><b>Stooq</b><p>End-of-day price history with no key. After that, the price you enter yourself.</p></div>
+        <div class="src" style="--i: 4; --c: var(--fn)"><span class="src-k">Macro</span><b>Treasury, BLS, Bank of Canada, ECB, Eurostat, OECD, World Bank</b><p>Government bond yields and inflation, used as the hurdle rate for each company's country.</p></div>
+        <div class="src" style="--i: 5; --c: var(--re)"><span class="src-k">Documents</span><b>Company reports</b><p>Annual reports, MD&amp;A and presentations fetched from investor-relations sites, searchable and cited by page.</p></div>
+      </div>
+      <div class="zig flip">
+        <div class="zig-text">
+          <span class="tag">The tools</span>
+          <h3>Every tool, with its own record.</h3>
+          <p>Every tool the agent can call is listed with what it does, its parameters and how often it has been used. Here, the government-yield tool: the US Treasury curve, Bank of Canada benchmarks, the euro-area AAA curve and OECD ten-years, with the ten-year in the company's currency as the hurdle an earnings yield has to beat.</p>
+        </div>
+        <div class="zig-media">
+          <figure class="frame" style="--hue: var(--fn)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">knowledge · tools · macro_government_yields</span></div>
+<img src="assets/app/tools-macro.webp" alt="The Tools catalog with the grounding group open and the macro government yields tool selected, showing its description, its country parameter and its usage record." width="2000" height="1000" loading="lazy">
+</figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="cta">
+      <h2>See it on your portfolio.</h2>
+      <div class="cta-side">
+        <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-light pill-lg">Book an intro call →</a>
+        <a href="mailto:admin@shydel.com" class="cta-email">admin@shydel.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Shydel</span>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="platform.html">Platform</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="financials.html">Financials</a>
+    <a href="fixed-income.html">Fixed income</a>
+    <a href="private-equity.html">Private equity</a>
+    <a href="real-estate.html">Real estate</a>
+    <a href="about.html">About</a>
+  </nav>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

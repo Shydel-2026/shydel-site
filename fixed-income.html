@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += " js";</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,142 +18,200 @@
   <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
   <nav class="nav">
     <a href="index.html" class="nav-link nav-keep">Home</a>
-    <a href="private-equity.html" class="nav-link">Private equity</a>
-    <a href="real-estate.html" class="nav-link">Real estate</a>
-    <a href="public-equities.html" class="nav-link">Public equities</a>
-    <a href="fixed-income.html" class="nav-link" aria-current="page">Fixed income</a>
+    <a href="platform.html" class="nav-link nav-keep">Platform</a>
+    <a href="public-equities.html" class="nav-link nav-keep" aria-current="page">Assets</a>
     <a href="about.html" class="nav-link nav-keep">About</a>
     <a href="#contact" class="pill pill-dark">Contact</a>
   </nav>
 </header>
+<nav class="wrap subnav" aria-label="Asset classes"><a href="public-equities.html" class="subnav-link" style="--c: var(--eq)"><i></i>Public equities</a><a href="financials.html" class="subnav-link" style="--c: var(--fn)"><i></i>Financials</a><a href="fixed-income.html" class="subnav-link" aria-current="page" style="--c: var(--fi)"><i></i>Fixed income</a><a href="private-equity.html" class="subnav-link" style="--c: var(--pe)"><i></i>Private equity</a><a href="real-estate.html" class="subnav-link" style="--c: var(--re)"><i></i>Real estate</a></nav>
 
 <main>
   <section class="wrap page-hero">
-    <span class="tag">04 — Fixed income</span>
+    <span class="tag tag-fi">03 — Fixed income</span>
     <h1>The return is fixed. <span class="accent">The risk isn't.</span></h1>
-    <p class="lede">We build agentic systems for credit teams that start where a lender starts: with the downside. Trained on your credit framework, the agent asks one question of every issue, and keeps asking it as new filings arrive. Can this company fail to pay us back?</p>
+    <p class="lede">For a bond the agent starts where a lender starts: with the downside. It reads the same eighteen stages for coverage, seniority, collateral and covenants, pulls the hurdle rate from the government curve, and records what you would recover if the issuer failed.</p>
+    <div class="hero-actions">
+      <a href="#inapp" class="pill pill-accent">See it in the platform ↓</a>
+      <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-outline">Book an intro call</a>
+    </div>
   </section>
 
   <section class="band-blue">
     <div class="wrap split">
       <div>
         <span class="tag">Protection first</span>
-        <h2>A bond's upside is capped. Its downside isn't.</h2>
-        <p>An equity investor is paid for being right about what a business could become. A bondholder is paid a fixed coupon, and the return to maturity can be worked out in a line. What can't be worked out so easily is the loss if something unforeseen goes wrong. So the agent puts its effort where credit risk actually lives: whether the issuer can keep paying, and what you recover if it can't.</p>
-        <p>As with equities, nothing is pass/fail. Thin coverage can be acceptable with hard collateral and a deep cushion of equity beneath you. Strong coverage counts for less if you're last in line. The agent weighs these against each other, looks ahead for what could weaken them, and turns the result into a confidence range around repayment rather than a single rating.</p>
-        <p>And no bond is judged alone. Credit losses tend to arrive together, in the same sectors and the same downturns. So the agent also asks whether an issuer's risk of default moves with what you already hold, and how confident it is that the bond makes the whole portfolio safer, not just that it will be repaid.</p>
-        <div class="chips">
-          <span class="chip">Investment grade</span>
-          <span class="chip">High yield</span>
-          <span class="chip">Distressed</span>
-          <span class="chip">Private credit</span>
+        <h2>The same stages, read the way a lender reads them.</h2>
+        <p>A bond&#x27;s return is fixed and known; the loss if the issuer fails is not. So the agent reads the eighteen stages with the downside first: interest coverage on normalised earnings and again in a bad year, every claim ahead of yours in the debt tables, the collateral and the cushion of equity beneath the issue, and the covenants that protect it.</p>
+        <p>Hurdle rates come from the source, not a spreadsheet. Government yields and inflation are pulled live from the Treasury, the Bank of Canada, the ECB and the OECD, and the ten-year in the issuer&#x27;s currency is the rate every yield has to beat.</p>
+        <p>Fixed income shares the board and the memory, with its own rules and skills: covenant review, convertible and warrant terms, high-yield credit analysis. The cards below are illustrative: the agent&#x27;s format, applied to a senior secured bond. Click a stage to see what it does there.</p>
+        <div class="app" style="margin-top: 28px">
+<div class="app-card">
+<span class="label">Goal</span>
+<p class="app-goal">Illustrative · Run a full principled analysis of a senior secured issuer for the fixed income lane: classify the issuer, work every stage with cited findings, write thesis, valuation and scorecard cards, and record them on the board.</p>
+<div class="app-chips"><span class="app-chip accent">Senior secured notes</span><span class="app-chip ctype">Cyclical / commodity</span><span class="app-chip done">illustrative</span></div>
+<div class="stage-track" aria-label="Analysis stages">
+<button type="button" class="stage-step todo optional" data-pop-kicker="Stage 1 · Sourcing and filings" data-pop-title="Idea sourcing and screening" data-pop-state="what the agent does here" data-pop-body="Screens the issuer universe on yield against the hurdle, coverage and seniority; new issues, exchanges and distressed names." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="1. Idea sourcing and screening"><i>1</i><span>Ideas</span></button>
+<button type="button" class="stage-step current" data-pop-kicker="Stage 2 · Sourcing and filings" data-pop-title="Filings and accounting quality" data-pop-state="what the agent does here" data-pop-body="Pulls the filings and the offering documents: the indenture or credit agreement alongside the 10-K. The issuer is classified like any company." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="2. Filings and accounting quality"><i>2</i><span>Filings quality</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 3 · The statements" data-pop-title="Balance sheet" data-pop-state="what the agent does here" data-pop-body="Asset coverage: what stands behind the claim, tangible assets first." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="3. Balance sheet"><i>3</i><span>Balance sheet</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 4 · The statements" data-pop-title="Cash flow statement" data-pop-state="what the agent does here" data-pop-body="Cash generation available to service and repay debt after capital spending." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="4. Cash flow statement"><i>4</i><span>Cash flow</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 5 · The statements" data-pop-title="Income statement" data-pop-state="what the agent does here" data-pop-body="Normalised EBIT and interest coverage, then coverage again in a bad year." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="5. Income statement"><i>5</i><span>Income stmt</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 6 · The statements" data-pop-title="Debt tables" data-pop-state="what the agent does here" data-pop-body="The whole capital structure in order of seniority: maturities, rates, security, guarantees and covenants." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="6. Debt tables"><i>6</i><span>Debt</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 7 · The statements" data-pop-title="Commitments and contingencies" data-pop-state="what the agent does here" data-pop-body="Off-balance-sheet claims that rank alongside or ahead of yours." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="7. Commitments and contingencies"><i>7</i><span>Commitments</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 8 · The statements" data-pop-title="Receivables and provision for credit losses" data-pop-state="what the agent does here" data-pop-body="Working-capital quality that can drain liquidity before a maturity." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="8. Receivables and provision for credit losses"><i>8</i><span>Receivables</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 9 · The statements" data-pop-title="Market and segment analysis" data-pop-state="what the agent does here" data-pop-body="Which businesses generate the cash that pays the coupon, and how cyclical they are." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="9. Market and segment analysis"><i>9</i><span>Segments</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 10 · The statements" data-pop-title="Inventory analysis" data-pop-state="what the agent does here" data-pop-body="Inventory that can turn into a liquidity need; skipped where it does not apply." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="10. Inventory analysis"><i>10</i><span>Inventory</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 11 · The statements" data-pop-title="Leases and real estate analysis" data-pop-state="what the agent does here" data-pop-body="Lease obligations that rank ahead; property that is pledged or could be." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="11. Leases and real estate analysis"><i>11</i><span>Leases &amp; RE</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 12 · The statements" data-pop-title="Depreciation analysis" data-pop-state="what the agent does here" data-pop-body="Whether maintenance spending is being deferred to flatter coverage." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="12. Depreciation analysis"><i>12</i><span>Depreciation</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 13 · The business" data-pop-title="Business quality and moat" data-pop-state="what the agent does here" data-pop-body="The durability of the cash flows over the life of the bond." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="13. Business quality and moat"><i>13</i><span>Moat</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 14 · The business" data-pop-title="Management and governance" data-pop-state="what the agent does here" data-pop-body="Dividend recapitalisations, asset sales, and how creditors were treated before." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="14. Management and governance"><i>14</i><span>Management</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 15 · The decision" data-pop-title="Valuation" data-pop-state="what the agent does here" data-pop-body="Yield to maturity against the government curve, the spread for the risk, and recovery if the issuer defaults." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="15. Valuation"><i>15</i><span>Valuation</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 16 · The decision" data-pop-title="Risk and margin of safety" data-pop-state="what the agent does here" data-pop-body="Probability of default and loss given default; the cushion of equity and junior claims beneath you." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="16. Risk and margin of safety"><i>16</i><span>Risk / MoS</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 17 · The decision" data-pop-title="Decision, sizing and portfolio fit" data-pop-state="what the agent does here" data-pop-body="Issuer and sector concentration, duration, and whether this default risk rises with the rest of the book." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="17. Decision, sizing and portfolio fit"><i>17</i><span>Decision &amp; size</span></button>
+<button type="button" class="stage-step todo" data-pop-kicker="Stage 18 · The decision" data-pop-title="Monitoring and selling" data-pop-state="what the agent does here" data-pop-body="Covenant headroom, rating actions and refinancing dates, re-checked as filings arrive." data-pop-src="Illustrative. The stages and their order are the agent&#x27;s; the notes say what each one means for a bond." title="18. Monitoring and selling"><i>18</i><span>Monitor &amp; sell</span></button>
+</div>
+<div class="stage-progress"><i style="width: 6%"></i></div>
+<div class="stage-sum">Stage 2 of 18 · click a stage to see what the agent does there for a bond</div>
+</div>
         </div>
       </div>
-
-      <figure class="stack-card">
-        <figcaption>Illustrative · one senior secured bond, scored for protection and for your portfolio</figcaption>
-
-        <div class="stack-title">Claims on the company, most senior first</div>
-        <div class="layer layer-this">
-          <span class="layer-name">Senior secured notes <span class="this-tag">This bond</span></span>
-          <span class="layer-amt">$400M</span>
-          <span class="layer-bar"><i style="--w: .44"></i></span>
-        </div>
-        <div class="layer">
-          <span class="layer-name">Senior unsecured notes</span>
-          <span class="layer-amt">$250M</span>
-          <span class="layer-bar"><i style="--w: .28"></i></span>
-        </div>
-        <div class="layer">
-          <span class="layer-name">Subordinated notes</span>
-          <span class="layer-amt">$150M</span>
-          <span class="layer-bar"><i style="--w: .17"></i></span>
-        </div>
-        <div class="layer layer-equity">
-          <span class="layer-name">Common stock, at market</span>
-          <span class="layer-amt">$900M</span>
-          <span class="layer-bar"><i style="--w: 1"></i></span>
-        </div>
-        <p class="cushion"><strong>$1.3B</strong> beneath this bond has to be lost before it takes a hit.</p>
-
-        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
-        <div class="score-group g1">Protection</div>
-        <div class="score-row"><span class="score-factor">Interest coverage</span><span class="score-val">4.2× <small>1.9× stressed</small></span><span class="effect pos" style="--w: .35"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Collateral</span><span class="score-val">1.4× the issue</span><span class="effect pos" style="--w: .6"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Equity cushion</span><span class="score-val">3× the issue</span><span class="effect pos" style="--w: .7"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Covenant headroom</span><span class="score-val">30%</span><span class="effect pos" style="--w: .25"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Refinancing ahead</span><span class="score-val">45% due 2028</span><span class="effect neg" style="--w: .45"><i></i></span></div>
-        <div class="conf conf-sub">
-          <div class="conf-head"><span>Repaid in full</span><span class="conf-val">96% <span>(92–98%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 92%; width: 6%;"></span><span class="conf-point" style="left: 96%;"></span></div>
-        </div>
-
-        <div class="score-group g3">Effect on your portfolio</div>
-        <div class="score-row"><span class="score-factor">Default risk vs your holdings</span><span class="score-val">Low overlap</span><span class="effect pos" style="--w: .65"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Yield added</span><span class="score-val">7.1% <small>+0.4 pts</small></span><span class="effect pos" style="--w: .4"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Sector exposure</span><span class="score-val">9% → 11%</span><span class="effect neg" style="--w: .2"><i></i></span></div>
-
-        <div class="conf conf-total">
-          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">78% <span>(70–85%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 70%; width: 15%;"></span><span class="conf-point" style="left: 78%;"></span></div>
-          <p class="fi-verdict"><span class="verdict">Diversifier</span> Well protected, and its default risk doesn't rise in the same downturns as the rest of the book.</p>
-        </div>
-      </figure>
+      <div class="app">
+<div class="app-card">
+<h4><span>Illustrative · a senior secured bond, scored in the agent&#x27;s format with the standard weights</span><span class="label">Reasons for and against</span></h4>
+<div class="final-score pos"><div class="fs-num">6.6<span>/ 10</span></div><div><b>Final score</b> — the reasons for somewhat outweigh the reasons against.<div class="hint">Each measure counts by its importance — price (EV/EBIT, P/E) most, then return on capital, operating margin, growth, balance sheet, management. 5 is neutral, 10 is every measure as good as it gets.</div></div></div>
+<div class="sc-rows">
+<div class="sc-row"><span><span class="sc-measure">Price — EV/EBIT and P/E · 30%</span>Yield to maturity 7.1% against a 5.3% ten-year hurdle: 180 bps of spread for a first-lien claim</span><span class="sc-num pos">+0.50</span><span class="sc-effect"><i class="pos" style="--e: 0.5"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Return on tangible capital (ROIC) · 25%</span>Interest coverage 4.2× on normalised EBIT; 1.9× in a stressed year</span><span class="sc-num pos">+0.30</span><span class="sc-effect"><i class="pos" style="--e: 0.3"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Operating margin / business quality · 15%</span>First lien on plants and equipment; collateral about 1.4× the issue at forced-sale values</span><span class="sc-num pos">+0.60</span><span class="sc-effect"><i class="pos" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Growth of sales and operating income · 12%</span>Sales flat; growth matters less to a creditor than coverage</span><span class="sc-num neg">−0.10</span><span class="sc-effect"><i class="neg" style="--e: 0.1"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Balance sheet and debt · 10%</span>Equity and junior claims about 3× the issue beneath it; 45% of debt due in 2028</span><span class="sc-num pos">+0.20</span><span class="sc-effect"><i class="pos" style="--e: 0.2"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Management and capital allocation · 5%</span>Covenant headroom 30% on the leverage test; no dividend recapitalisations</span><span class="sc-num pos">+0.20</span><span class="sc-effect"><i class="pos" style="--e: 0.2"></i></span></div>
+<div class="sc-row"><span><span class="sc-measure">Other · 3%</span>Refinancing wall in 2028 at higher rates</span><span class="sc-num neg">−0.40</span><span class="sc-effect"><i class="neg" style="--e: 0.4"></i></span></div>
+</div>
+<div class="score-notes">
+<div class="score-note role"><b>Role in the portfolio</b><span>Diversifying secured credit; default risk does not rise with the rest of the book</span></div>
+<div class="score-note verdict"><b>Verdict</b><span>buy — well protected; the first claim on hard assets and the equity cushion keep the downside small</span></div>
+<div class="score-note"><b>Chance of a permanent loss</b><span>3%</span></div>
+</div>
+<div class="app-foot">Illustrative figures. The format, the measures and the weights are the agent&#x27;s (key_metrics.SCORE_MEASURES); the issuer is invented.</div>
+</div>
+      </div>
     </div>
   </section>
 
-  <section class="wrap deep">
+  <section class="wrap stages-section">
     <div class="section-head">
-      <h2>What it does on every issue.</h2>
-      <p>The work a careful credit analyst would do, on every issuer you hold or follow, each time something changes.</p>
+      <h2>Eighteen stages, in order.</h2>
+      <p>The agent&#x27;s eighteen stages, read for an issuer. The debt tables, commitments and covenants carry the most weight; the decision is about the cushion beneath the claim.</p>
     </div>
-    <ol class="process">
-      <li>
-        <span class="process-n">01</span>
-        <h3>Reads every document</h3>
-        <p>Annual and quarterly reports, prospectuses, indentures and credit agreements, pulled as soon as they're filed. The terms that matter are extracted and linked back to the clause they came from.</p>
-      </li>
-      <li>
-        <span class="process-n">02</span>
-        <h3>Tests the coverage</h3>
-        <p>Interest coverage is measured on normalized earnings, stripped of one-off items, and then again in a bad year. A company that covers its interest comfortably only in good times isn't a safe borrower.</p>
-      </li>
-      <li>
-        <span class="process-n">03</span>
-        <h3>Maps the capital structure</h3>
-        <p>Every claim ahead of yours and behind it is laid out in order, including leases, pensions and debt at subsidiaries that can quietly rank ahead of a parent company's bonds.</p>
-      </li>
-      <li>
-        <span class="process-n">04</span>
-        <h3>Values the collateral</h3>
-        <p>What's pledged, how the liens are structured and what the assets would realistically fetch in a forced sale, not what they're carried at on the balance sheet.</p>
-      </li>
-      <li>
-        <span class="process-n">05</span>
-        <h3>Measures the equity cushion</h3>
-        <p>The market value of the stock beneath the issue shows how much value the company can lose before bondholders are touched. It is tracked as the share price moves, not once a quarter.</p>
-      </li>
-      <li>
-        <span class="process-n">06</span>
-        <h3>Reads the covenants</h3>
-        <p>What protection the indenture really gives, how much headroom is left, and where the gaps are that would let assets or cash move out of reach of bondholders.</p>
-      </li>
-      <li>
-        <span class="process-n">07</span>
-        <h3>Looks for trouble years ahead</h3>
-        <p>Maturities bunching into a refinancing wall, free cash flow being absorbed by working capital, spending the business will have to make, and competition starting to erode margins.</p>
-      </li>
-      <li>
-        <span class="process-n">08</span>
-        <h3>Models default and recovery</h3>
-        <p>A range of scenarios for the chance of default and how much would be recovered if it happened, giving a probability of loss with an honest range around it. Updated as new figures come in.</p>
-      </li>
-      <li>
-        <span class="process-n">09</span>
-        <h3>Fits it to the portfolio</h3>
-        <p>Issuer and sector concentration, duration and spread, and whether its default risk rises in the same downturns as the rest of the book. It also compares the issuer's other bonds and loans, to find the claim that offers the most protection for the yield.</p>
-      </li>
-    </ol>
+<div class="ui-tabs">
+<div class="ui-tablist" role="tablist">
+<button class="ui-tab" role="tab" id="fi-stages-g0-tab" aria-controls="fi-stages-g0" aria-selected="true">Sourcing and filings <span class="count">01–02</span></button>
+<button class="ui-tab" role="tab" id="fi-stages-g1-tab" aria-controls="fi-stages-g1" aria-selected="false">The statements <span class="count">03–12</span></button>
+<button class="ui-tab" role="tab" id="fi-stages-g2-tab" aria-controls="fi-stages-g2" aria-selected="false">The business <span class="count">13–14</span></button>
+<button class="ui-tab" role="tab" id="fi-stages-g3-tab" aria-controls="fi-stages-g3" aria-selected="false">The decision <span class="count">15–18</span></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-stages-g0" aria-labelledby="fi-stages-g0-tab">
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--pe)"><i>1</i><div><b>Idea sourcing and screening <small>optional</small></b><p>Screens the issuer universe on yield against the hurdle, coverage and seniority; new issues, exchanges and distressed names.</p></div></div>
+<div class="stage-item" style="--g: var(--pe)"><i>2</i><div><b>Filings and accounting quality</b><p>Pulls the filings and the offering documents: the indenture or credit agreement alongside the 10-K. The issuer is classified like any company.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-stages-g1" aria-labelledby="fi-stages-g1-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--eq)"><i>3</i><div><b>Balance sheet</b><p>Asset coverage: what stands behind the claim, tangible assets first.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>4</i><div><b>Cash flow statement</b><p>Cash generation available to service and repay debt after capital spending.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>5</i><div><b>Income statement</b><p>Normalised EBIT and interest coverage, then coverage again in a bad year.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>6</i><div><b>Debt tables</b><p>The whole capital structure in order of seniority: maturities, rates, security, guarantees and covenants.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>7</i><div><b>Commitments and contingencies</b><p>Off-balance-sheet claims that rank alongside or ahead of yours.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>8</i><div><b>Receivables and provision for credit losses</b><p>Working-capital quality that can drain liquidity before a maturity.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>9</i><div><b>Market and segment analysis</b><p>Which businesses generate the cash that pays the coupon, and how cyclical they are.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>10</i><div><b>Inventory analysis</b><p>Inventory that can turn into a liquidity need; skipped where it does not apply.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>11</i><div><b>Leases and real estate analysis</b><p>Lease obligations that rank ahead; property that is pledged or could be.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>12</i><div><b>Depreciation analysis</b><p>Whether maintenance spending is being deferred to flatter coverage.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-stages-g2" aria-labelledby="fi-stages-g2-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--re)"><i>13</i><div><b>Business quality and moat</b><p>The durability of the cash flows over the life of the bond.</p></div></div>
+<div class="stage-item" style="--g: var(--re)"><i>14</i><div><b>Management and governance</b><p>Dividend recapitalisations, asset sales, and how creditors were treated before.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-stages-g3" aria-labelledby="fi-stages-g3-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--fi)"><i>15</i><div><b>Valuation</b><p>Yield to maturity against the government curve, the spread for the risk, and recovery if the issuer defaults.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>16</i><div><b>Risk and margin of safety</b><p>Probability of default and loss given default; the cushion of equity and junior claims beneath you.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>17</i><div><b>Decision, sizing and portfolio fit</b><p>Issuer and sector concentration, duration, and whether this default risk rises with the rest of the book.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>18</i><div><b>Monitoring and selling</b><p>Covenant headroom, rating actions and refinancing dates, re-checked as filings arrive.</p></div></div>
+</div>
+</div>
+</div>
+  </section>
+
+  <section class="band-dark mem-section" id="memory">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">Memory and skills</span>
+        <h2>What the agent brings to each stage.</h2>
+        <p>Credit has its own scope: standards for senior securities, high-yield analysis, covenant review. Most of it is tagged to the debt stage, where a bond is actually judged, and it is pushed alongside the firm-wide rules.</p>
+      </div>
+      <div class="split mem-split">
+        <div>
+<div class="mx-kinds">
+            <div><b>Episodes</b><span>Decisions, corrections and approvals, recorded as they happen.</span></div>
+            <div><b>Rules</b><span>Value and process rules, each with a why and a confidence.</span></div>
+            <div><b>Skills</b><span>Written procedures, one per task: normalise earnings, read covenants, value a REIT.</span></div>
+            <div><b>Knowledge</b><span>Framework notes and company files the agent keeps between sessions.</span></div>
+          </div>
+          <p class="mem-note">Equity-only rules are left out when the agent works a bond; your credit committee&#x27;s standards become rules in this scope.</p>
+          <a href="platform-memory.html" class="pill pill-light">How memory works →</a>
+        </div>
+<div class="mx" style="--hue: var(--fi)"><details class="mx-stage"><summary><span class="mx-n">1</span><b>Idea sourcing and screening</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Evaluating an announced cash or stock-for-stock deal, a tender, or a takeover battle, and deciding whether the spread pays for the break risk. Refines `sem-eq-merger-situations-avoid-plain-risk-arbit-16yx27` with the…" data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="merger-arbitrage-spread-math" data-pop-body="Evaluating an announced cash or stock-for-stock deal, a tender, or a takeover battle, and deciding whether the spread pays for the break risk. Refines `sem-eq-merger-situations-avoid-plain-risk-arbit-16yx27` with the arithmetic Greenblatt and Eric Rosenfeld used." data-pop-src="data/memory/procedural/skills/public_equities/merger-arbitrage-spread-math/SKILL.md · status: active" role="button" tabindex="0">merger-arbitrage-spread-math</span><span class="mx-skill" title="A company is emerging (or recently emerged) from Chapter 11 and new shares are being issued to former creditors. Do not buy the old common stock of a company in bankruptcy - it sits last in priority and usually gets…" data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="post-bankruptcy-equity-analysis" data-pop-body="A company is emerging (or recently emerged) from Chapter 11 and new shares are being issued to former creditors. Do not buy the old common stock of a company in bankruptcy - it sits last in priority and usually gets little or nothing, yet often trades at speculative prices. Pre-emergence bonds, bank debt and trade claims are a specialist field." data-pop-src="data/memory/procedural/skills/public_equities/post-bankruptcy-equity-analysis/SKILL.md · status: active" role="button" tabindex="0">post-bankruptcy-equity-analysis</span><span class="mx-skill" title="A parent distributes rights to buy shares of a subsidiary (rights-offering spin-off) or a company raises equity through a rights issue, especially when the terms look confusing or unattractive. Built from Greenblatt&#x27;s…" data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="rights-offering-analysis" data-pop-body="A parent distributes rights to buy shares of a subsidiary (rights-offering spin-off) or a company raises equity through a rights issue, especially when the terms look confusing or unattractive. Built from Greenblatt&#x27;s Liberty Media / Tele-Communications (1990-91) case." data-pop-src="data/memory/procedural/skills/public_equities/rights-offering-analysis/SKILL.md · status: active" role="button" tabindex="0">rights-offering-analysis</span></div><div class="mx-rule"><span class="label">process rule</span>For relative-value trades between near-identical claims, identify the non-economic source of the dislocation, require a convergence catalyst or fixed date, size for further divergence, and never finance a small mispricing with…</div><div class="mx-rule"><span class="label">process rule</span>Recommend a swap from one security to another only if the security bought is attractive on its own or there is a definite contractual link between the two; treat unseasoned industrial bonds and preferreds as speculative, buyable…</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">6</span><b>Debt tables</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Reading an indenture, credit agreement or preferred-stock charter before buying a senior security. Graham and Dodd&#x27;s view: covenants add to safety and are worth insisting on, but they do not guarantee it. Success…" data-pop-kicker="Skill · Debt tables" data-pop-title="bond-covenant-review" data-pop-body="Reading an indenture, credit agreement or preferred-stock charter before buying a senior security. Graham and Dodd&#x27;s view: covenants add to safety and are worth insisting on, but they do not guarantee it. Success depends mainly on the enterprise; the issues that did best in the 1930s often had weak indentures." data-pop-src="data/memory/procedural/skills/fixed_income/bond-covenant-review/SKILL.md · status: active" role="button" tabindex="0">bond-covenant-review</span><span class="mx-skill" title="Analysing any convertible bond or preferred, a bond or preferred with warrants, or a participating senior security (Graham and Dodd ch. 23–24). For an investment-grade buyer the terms deserve the most attention, because…" data-pop-kicker="Skill · Debt tables" data-pop-title="convertible-and-warrant-terms-analysis" data-pop-body="Analysing any convertible bond or preferred, a bond or preferred with warrants, or a participating senior security (Graham and Dodd ch. 23–24). For an investment-grade buyer the terms deserve the most attention, because they can be analysed definitively, whereas the market price already reflects whatever superiority one company has shown over another." data-pop-src="data/memory/procedural/skills/fixed_income/convertible-and-warrant-terms-analysis/SKILL.md · status: active" role="button" tabindex="0">convertible-and-warrant-terms-analysis</span><span class="mx-skill" title="Any levered company, especially when debt is rising, rates are rising, or earnings are falling. Based on Oglove&#x27;s debt and cash-flow analysis." data-pop-kicker="Skill · Debt tables" data-pop-title="debt-burden-and-interest-check" data-pop-body="Any levered company, especially when debt is rising, rates are rising, or earnings are falling. Based on Oglove&#x27;s debt and cash-flow analysis." data-pop-src="data/memory/procedural/skills/public_equities/debt-burden-and-interest-check/SKILL.md · status: active" role="button" tabindex="0">debt-burden-and-interest-check</span><span class="mx-skill" title="Companies losing money at the operating level (turnaround) or profitable before interest but not after (over-levered), and liquidation candidates." data-pop-kicker="Skill · Debt tables" data-pop-title="distressed-and-turnaround-evaluation" data-pop-body="Companies losing money at the operating level (turnaround) or profitable before interest but not after (over-levered), and liquidation candidates." data-pop-src="data/memory/procedural/skills/public_equities/distressed-and-turnaround-evaluation/SKILL.md · status: active" role="button" tabindex="0">distressed-and-turnaround-evaluation</span><span class="mx-skill" title="Evaluating a below-investment-grade bond or loan for purchase as a credit (not distressed) position. This is Howard Marks&#x27;s modern adaptation of Graham-Dodd. Unlike Graham, it accepts informed judgments about the…" data-pop-kicker="Skill · Debt tables" data-pop-title="marks-high-yield-credit-analysis" data-pop-body="Evaluating a below-investment-grade bond or loan for purchase as a credit (not distressed) position. This is Howard Marks&#x27;s modern adaptation of Graham-Dodd. Unlike Graham, it accepts informed judgments about the future, because credit risk is prospective." data-pop-src="data/memory/procedural/skills/fixed_income/marks-high-yield-credit-analysis/SKILL.md · status: active" role="button" tabindex="0">marks-high-yield-credit-analysis</span></div><div class="mx-rule"><span class="label">process rule</span>Apply Graham-Dodd minimum standards to investment-grade bond candidates: class weakness must be offset by a stronger individual exhibit, minimum issuer size by sector, and foreign issuers treated as exceptions</div><div class="mx-rule"><span class="label">process rule</span>Ignore the book value of pledged plant; rely on collateral only where it is mobile or separately saleable (equipment trusts, investment-company collateral), and for real-estate debt use actual cost, a 66.7% maximum loan-to-value…</div></div></details></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-tint tint-fi inapp" id="inapp">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">In the platform</span>
+        <h2>What it looks like in the Shydel Agent.</h2>
+        <p>Fixed income sits on the same board as everything else, with its own lane, its own rules and the macro tools that set the hurdle rate.</p>
+      </div>
+<div class="ui-tabs vertical" style="--hue: var(--fi)">
+<div class="ui-tablist" role="tablist" aria-label="Views of the platform">
+<span class="label">In the app</span>
+<button class="ui-tab" role="tab" id="fi-view-v0-tab" aria-controls="fi-view-v0" aria-selected="true"><b>Owned, weighed against the whole book.</b><small>Portfolio · Fixed income lane</small></button>
+<button class="ui-tab" role="tab" id="fi-view-v1-tab" aria-controls="fi-view-v1" aria-selected="false"><b>Credit rules, kept at the debt stage.</b><small>Knowledge · Memory</small></button>
+<button class="ui-tab" role="tab" id="fi-view-v2-tab" aria-controls="fi-view-v2" aria-selected="false"><b>A credit skill, opened.</b><small>Knowledge · Skill</small></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-view-v0" aria-labelledby="fi-view-v0-tab">
+<figure class="frame" style="--hue: var(--fi)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">portfolio · fixed income lane</span></div>
+<img src="assets/app/board-fixed-income.webp" alt="The fixed income lane on the portfolio board, with owned bond funds shown with their weight in the portfolio." width="1800" height="738" loading="lazy">
+</figure>
+<div class="panel-text"><h3>Owned, weighed against the whole book.</h3><p>Bonds, bond funds and cash sit in the fixed income lane next to the equity and real estate lanes, each with its weight in the book. Weight, duration and issuer exposure are judged against the whole book, not the bond alone.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-view-v1" aria-labelledby="fi-view-v1-tab" hidden>
+<figure class="frame frame-tall-md" style="--hue: var(--fi)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">knowledge · memory · fixed income</span></div>
+<img src="assets/app/fi-rules.webp" alt="The memory browser scoped to fixed income, with the debt tables stage open and its credit rules listed." width="1660" height="2000" loading="lazy">
+</figure>
+<div class="panel-text"><h3>Credit rules, kept at the debt stage.</h3><p>Scope the memory to fixed income and the debt stage opens onto the credit library: standards for senior securities, covenant review, convertible terms, high-yield analysis. These are pushed to the agent when it reaches the debt tables of an issuer.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="fi-view-v2" aria-labelledby="fi-view-v2-tab" hidden>
+<figure class="frame" style="--hue: var(--fi)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">knowledge · memory · bond-covenant-review</span></div>
+<img src="assets/app/fi-skill.webp" alt="A credit skill opened in the memory browser: its stage, its why and its steps for reading an indenture." width="2000" height="1471" loading="lazy">
+</figure>
+<div class="panel-text"><h3>A credit skill, opened.</h3><p>Each skill is a written procedure with its stage, the kinds of company it is for and why it matters. Here, the covenant review the agent follows when it reads an indenture: events of default, lien protection, additional-debt tests, sinking funds.</p></div>
+</div>
+</div>
+      <div class="inapp-foot">
+        <a href="platform.html" class="pill pill-accent">See the whole platform →</a>
+      </div>
+    </div>
   </section>
 
   <section class="wrap uses">
@@ -179,11 +238,12 @@
   </section>
 
   <section class="wrap other">
-    <h2>Other areas we cover</h2>
+    <h2>Other asset classes</h2>
     <div class="other-links">
+      <a href="public-equities.html" class="pill pill-outline">Public equities</a>
+      <a href="financials.html" class="pill pill-outline">Financials</a>
       <a href="private-equity.html" class="pill pill-outline">Private equity</a>
       <a href="real-estate.html" class="pill pill-outline">Real estate</a>
-      <a href="public-equities.html" class="pill pill-outline">Public equities</a>
     </div>
   </section>
 
@@ -191,8 +251,8 @@
     <div class="cta">
       <h2>Let's talk about your portfolio.</h2>
       <div class="cta-side">
-        <a href="mailto:admin@shydel.com" class="pill pill-light pill-lg">Book an intro call →</a>
-        <span class="cta-email">admin@shydel.com</span>
+        <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-light pill-lg">Book an intro call →</a>
+        <a href="mailto:admin@shydel.com" class="cta-email">admin@shydel.com</a>
       </div>
     </div>
   </section>
@@ -202,13 +262,16 @@
   <span>© 2026 Shydel</span>
   <nav class="footer-nav">
     <a href="index.html">Home</a>
+    <a href="platform.html">Platform</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="financials.html">Financials</a>
+    <a href="fixed-income.html">Fixed income</a>
     <a href="private-equity.html">Private equity</a>
     <a href="real-estate.html">Real estate</a>
-    <a href="public-equities.html">Public equities</a>
-    <a href="fixed-income.html">Fixed income</a>
     <a href="about.html">About</a>
   </nav>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>

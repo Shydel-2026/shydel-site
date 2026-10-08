@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += " js";</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,129 +18,217 @@
   <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(-1 1)"><path d="M16 16 L28 16 A12 12 0 0 1 16 28 Z M16 16 L16 28 A12 12 0 0 1 4 16 Z M16 16 L4 16 A12 12 0 0 1 16 4 Z" fill="currentColor"/><path d="M16 16 L16 4 A12 12 0 0 1 28 16 Z" fill="#2340D9" transform="translate(2 -2)"/></g></svg>Shydel</a>
   <nav class="nav">
     <a href="index.html" class="nav-link nav-keep">Home</a>
-    <a href="private-equity.html" class="nav-link">Private equity</a>
-    <a href="real-estate.html" class="nav-link">Real estate</a>
-    <a href="public-equities.html" class="nav-link" aria-current="page">Public equities</a>
-    <a href="fixed-income.html" class="nav-link">Fixed income</a>
+    <a href="platform.html" class="nav-link nav-keep">Platform</a>
+    <a href="public-equities.html" class="nav-link nav-keep" aria-current="page">Assets</a>
     <a href="about.html" class="nav-link nav-keep">About</a>
     <a href="#contact" class="pill pill-dark">Contact</a>
   </nav>
 </header>
+<nav class="wrap subnav" aria-label="Asset classes"><a href="public-equities.html" class="subnav-link" aria-current="page" style="--c: var(--eq)"><i></i>Public equities</a><a href="financials.html" class="subnav-link" style="--c: var(--fn)"><i></i>Financials</a><a href="fixed-income.html" class="subnav-link" style="--c: var(--fi)"><i></i>Fixed income</a><a href="private-equity.html" class="subnav-link" style="--c: var(--pe)"><i></i>Private equity</a><a href="real-estate.html" class="subnav-link" style="--c: var(--re)"><i></i>Real estate</a></nav>
 
 <main>
   <section class="wrap page-hero">
-    <span class="tag">03 — Public equities</span>
+    <span class="tag tag-eq">01 — Public equities</span>
     <h1>An analyst trained on <span class="accent">your framework.</span></h1>
-    <p class="lede">We build agentic systems that learn how your firm invests, do the work your analysts would do on every company in your universe, and join the team as one more analyst.</p>
+    <p class="lede">The Shydel Agent works every public company through eighteen ordered stages, from the filings to the decision. At each one it pushes your firm&#x27;s rules into its working memory, and at the end it records the thesis, the valuation and the scorecard on your board. Every number cites the filing it came from.</p>
+    <div class="hero-actions">
+      <a href="#inapp" class="pill pill-accent">See it in the platform ↓</a>
+      <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-outline">Book an intro call</a>
+    </div>
   </section>
 
   <section class="band-dark">
     <div class="wrap split">
       <div>
         <span class="tag">Your framework, not a checklist</span>
-        <h2>Two firms can read the same 10-K and reach opposite conclusions.</h2>
-        <p>Every investor wants to buy a business for less than it's worth. Where firms differ is in how they measure that worth. A Graham-style value shop anchors on assets and normalized earnings, and wants a wide margin of safety today. A growth fund will pay up for a long runway to reinvest at high returns. A generic model can't serve both, so we don't ship one. We train the agent on your criteria, your thresholds and your past calls, for the part of the market you actually invest in.</p>
-        <p>And almost no company passes every screen. A business earning 25% on its capital usually trades well above book, and that's fair if the margins hold. So the agent weighs the factors against each other the way your analysts would. A miss lowers its confidence in the stock. It doesn't rule the stock out.</p>
-        <p>Nor is it a ratio screen. The risks that hurt a stock most tend to build quietly, across the balance sheet, the cash flows and the competitive landscape, long before they reach the headline numbers. The agent reads every filing for those slow-building problems and weighs how they could play out over the next few years. That forward view, more than any single ratio, is what sets its confidence.</p>
-        <p>Then it asks the question that matters most: does this stock make your portfolio better? Will it add to overall return, diversify what you already hold, or both?</p>
-        <div class="chips">
-          <span class="chip">Deep value</span>
-          <span class="chip">Quality</span>
-          <span class="chip">Growth</span>
-          <span class="chip">Special situations</span>
-          <span class="chip">Large cap</span>
-          <span class="chip">Mid cap</span>
-          <span class="chip">Small &amp; micro cap</span>
+        <h2>The first stage picks the playbook. The scorecard weighs it your way.</h2>
+        <p>In the first stage the agent classifies the company: deep value, quality franchise, growth, special situation, turnaround, cyclical or financial. From then on only the rules and skills written for that type are pushed into its working memory, stage by stage. A Graham value shop and a Fisher growth fund get different rules at every step, from the same library.</p>
+        <p>Almost no company passes every screen, so the scorecard does not pass or fail. Every reason for and against gets an effect from −1 to +1, weighted by what your firm counts most: price (EV/EBIT and P/E) 30%, return on tangible capital 25%, operating margin 15%, growth 12%, balance sheet 10%, management 5%. The result is a score out of ten, a role in the portfolio, a verdict and the chance of a permanent loss.</p>
+        <p>Below: an analysis of Open Text, as the agent recorded it. Click any stage for its finding.</p>
+        <div class="app" style="margin-top: 28px">
+<div class="app-card">
+<span class="label">Goal</span>
+<p class="app-goal">Run a full principled company analysis of Open Text Corporation (OTEX.TO) for the portfolio, which currently holds it on the watchlist. Classify the company, work every analysis stage with cited findings, write thesis/valuation/scorecard cards, ground the decision in current portfolio weights, and record the thesis and analysis on the board, then move OTEX from watchlist to researching.</p>
+<div class="app-chips"><span class="app-chip accent">OTEX.TO</span><span class="app-chip ctype">Deep value / asset play (Graham)</span><span class="app-chip ctype">Quality franchise (Buffett / Greenwald)</span><span class="app-chip done">analysis complete</span></div>
+<div class="stage-track" aria-label="Analysis stages">
+<button type="button" class="stage-step todo optional" data-pop-kicker="Stage 1 · Sourcing and filings" data-pop-title="Idea sourcing and screening" data-pop-state="optional, not run" data-pop-body="Not run: the analyst handed over the company, so sourcing was not needed." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="1. Idea sourcing and screening"><i>1</i><span>Ideas</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 2 · Sourcing and filings" data-pop-title="Filings and accounting quality" data-pop-state="done" data-pop-body="Accounting is clean but the serial-acquirer model makes reported (GAAP) earnings understate cash earnings. Value on owner earnings, not reported earnings per share.|Company type: quality franchise and deep value / asset play." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="2. Filings and accounting quality"><i>✓</i><span>Filings quality</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 3 · The statements" data-pop-title="Balance sheet" data-pop-state="done" data-pop-body="Asset-light, customer-funded franchise with deeply negative tangible book. Value rests on earning power, not assets; leverage is the key balance-sheet risk." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="3. Balance sheet"><i>✓</i><span>Balance sheet</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 4 · The statements" data-pop-title="Cash flow statement" data-pop-state="done" data-pop-body="Cash generation is the strength: high, stable free cash flow (~US$800M) that comfortably covers a rising dividend and buyback, partly flattered by the deferred-revenue tailwind." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="4. Cash flow statement"><i>✓</i><span>Cash flow</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 5 · The statements" data-pop-title="Income statement" data-pop-state="done" data-pop-body="A real franchise profit engine, but one whose top line barely grows organically. Margins, not revenue, drove the recent earnings recovery." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="5. Income statement"><i>✓</i><span>Income stmt</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 6 · The statements" data-pop-title="Debt tables" data-pop-state="done" data-pop-body="Leverage is substantial but investment-grade-like in structure: laddered, cheaply priced and covered by cash flow. A risk to manage, not a solvency threat. Net debt US$4.8bn; the 6.90% notes due December 2027 are the first wall." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="6. Debt tables"><i>✓</i><span>Debt</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 7 · The statements" data-pop-title="Commitments and contingencies" data-pop-state="done" data-pop-body="Off-balance-sheet obligations are small and there are no hidden liabilities that change the thesis." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="7. Commitments and contingencies"><i>✓</i><span>Commitments</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 8 · The statements" data-pop-title="Receivables and provision for credit losses" data-pop-state="skipped" data-pop-body="Not a thesis driver for an asset-light, 81%-recurring-revenue software firm: customers largely prepay through contract and deferred revenue; there is no financing book or credit-loss driver." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="8. Receivables and provision for credit losses"><i>–</i><span>Receivables</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 9 · The statements" data-pop-title="Market and segment analysis" data-pop-state="done" data-pop-body="A broad, entrenched enterprise-information-management suite with real switching costs, but in mature or declining end-markets where cloud growth only just offsets legacy erosion." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="9. Market and segment analysis"><i>✓</i><span>Segments</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 10 · The statements" data-pop-title="Inventory analysis" data-pop-state="skipped" data-pop-body="No physical inventory." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="10. Inventory analysis"><i>–</i><span>Inventory</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 11 · The statements" data-pop-title="Leases and real estate analysis" data-pop-state="skipped" data-pop-body="Operating leases of only about US$202M, immaterial to a ~US$5.25bn-revenue business." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="11. Leases and real estate analysis"><i>–</i><span>Leases &amp; RE</span></button>
+<button type="button" class="stage-step skipped" data-pop-kicker="Stage 12 · The statements" data-pop-title="Depreciation analysis" data-pop-state="skipped" data-pop-body="Economic depreciation is negligible (capital spending about 3–4% of revenue). The only material non-cash charge, US$288.6M of acquired-intangible amortization, was analysed in the income-statement and cash-flow stages." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="12. Depreciation analysis"><i>–</i><span>Depreciation</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 13 · The business" data-pop-title="Business quality and moat" data-pop-state="done" data-pop-body="Switching costs on systems of record, compliance lock-in and B2B network scale are the moat; 81% of revenue is recurring. The moat defends but does not compound: organic growth is flat to negative." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="13. Business quality and moat"><i>✓</i><span>Moat</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 14 · The business" data-pop-title="Management and governance" data-pop-state="done" data-pop-body="Shareholder-friendly capital allocation: buybacks shrinking the share count, a growing and well-covered dividend, about US$3bn of deleveraging. Against it: a serial-acquirer record and a new CEO&#x27;s strategy reset." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="14. Management and governance"><i>✓</i><span>Management</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 15 · The decision" data-pop-title="Valuation" data-pop-state="done" data-pop-body="Normalised owner EBIT about US$1.3bn. Earnings power value C$31 on GAAP EBIT to C$46 on franchise cash EBIT.|Scenarios per share: worst C$8.6 (5%), bear C$23.6 (30%), base C$43 (45%), bull C$66.4 (20%). Probability-weighted C$40.1 against a C$32.30 price." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="15. Valuation"><i>✓</i><span>Valuation</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 16 · The decision" data-pop-title="Risk and margin of safety" data-pop-state="done" data-pop-body="Key risks: refinancing the US$1.0bn 6.90% notes and the SOFR term loan at higher rates; customer-support revenue (44%) eroding faster than cloud replaces it; AI-native tools displacing ECM over 5–10 years; another large debt-funded acquisition.|Chance of a permanent loss: 20%." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="16. Risk and margin of safety"><i>✓</i><span>Risk / MoS</span></button>
+<button type="button" class="stage-step done" data-pop-kicker="Stage 17 · The decision" data-pop-title="Decision, sizing and portfolio fit" data-pop-state="done" data-pop-body="Watch. Positive expected value (about C$40 against C$32.30) but no margin of safety: buy below about C$24, target weight about 3%, trim above C$60.|Role: a diversifying, cash-generative software holding that would reduce the HMM.A concentration." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="17. Decision, sizing and portfolio fit"><i>✓</i><span>Decision &amp; size</span></button>
+<button type="button" class="stage-step current" data-pop-kicker="Stage 18 · The decision" data-pop-title="Monitoring and selling" data-pop-state="current stage" data-pop-body="Sell triggers: customer-support revenue in structural free-fall with cloud failing to offset; operating margin below the high teens or net leverage drifting toward the 4.50× covenant; a new large debt-funded acquisition at a full price." data-pop-src="sec:0001002638-26-000068 · cards/thesis_OTEX, valuation_OTEX, scorecard_OTEX · 7 Oct 2026" title="18. Monitoring and selling"><i>18</i><span>Monitor &amp; sell</span></button>
+</div>
+<div class="stage-progress"><i style="width: 100%"></i></div>
+<div class="stage-sum">17 of 17 analysis stages done or skipped · click a stage for its finding</div>
+</div>
         </div>
       </div>
-      <figure class="mandate">
-        <figcaption>Illustrative · one company, scored for your framework and your portfolio</figcaption>
-        <div class="score-row score-head"><span>Factor</span><span>Reading</span><span>Confidence</span></div>
-
-        <div class="score-group g1">The numbers</div>
-        <div class="score-row"><span class="score-factor">Return on invested capital</span><span class="score-val">24%</span><span class="effect pos" style="--w: .8"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Operating margin</span><span class="score-val">Stable, 5 yrs</span><span class="effect pos" style="--w: .55"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Tangible book value</span><span class="score-val">+9% / yr</span><span class="effect pos" style="--w: .5"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">EV / EBIT</span><span class="score-val">11× <small>vs 8×</small></span><span class="effect neg" style="--w: .3"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Price / tangible book</span><span class="score-val">2.4×</span><span class="effect neg" style="--w: .45"><i></i></span></div>
-
-        <div class="score-group g2">What the numbers don't show yet</div>
-        <div class="score-row"><span class="score-factor">Free cash flow ahead<span class="hint">Cash being tied up in stock</span></span><span class="score-val">Inventory +22%, sales +5%</span><span class="effect neg" style="--w: .45"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Capital needs ahead<span class="hint">Spending that will have to come</span></span><span class="score-val">Plants near end of life</span><span class="effect neg" style="--w: .4"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Leverage ahead<span class="hint">Borrowing to fund the gap</span></span><span class="score-val">Debt outgrowing earnings</span><span class="effect neg" style="--w: .5"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Margins ahead<span class="hint">Pricing power at risk</span></span><span class="score-val">Low-cost rival gaining share</span><span class="effect neg" style="--w: .4"><i></i></span></div>
-        <div class="conf conf-sub">
-          <div class="conf-head"><span>Fits your framework</span><span class="conf-val">58% <span>(44–69%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 44%; width: 25%;"></span><span class="conf-point" style="left: 58%;"></span></div>
-        </div>
-
-        <div class="score-group g3">Effect on your portfolio</div>
-        <div class="score-row"><span class="score-factor">Expected return contribution</span><span class="score-val">+0.6 pts / yr</span><span class="effect pos" style="--w: .6"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Correlation with your holdings</span><span class="score-val">0.28</span><span class="effect pos" style="--w: .7"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Trading liquidity</span><span class="score-val">~6 days to build</span><span class="effect neg" style="--w: .2"><i></i></span></div>
-        <div class="score-row"><span class="score-factor">Sector exposure</span><span class="score-val">14% → 17%</span><span class="effect neg" style="--w: .3"><i></i></span></div>
-
-        <div class="conf conf-total">
-          <div class="conf-head"><span>Confidence it's a good addition</span><span class="conf-val">63% <span>(52–73%)</span></span></div>
-          <div class="conf-track" aria-hidden="true"><span class="conf-band" style="left: 52%; width: 21%;"></span><span class="conf-point" style="left: 63%;"></span></div>
-          <p class="conf-note"><span class="role">Diversifier</span> Strong returns, but rising debt and capital needs hold confidence back. Flagged for an analyst.</p>
-        </div>
-      </figure>
+      <div class="app">
+<div class="app-card">
+<h4><span>Open Text (OTEX.TO) — quality franchise, cheap on cash, but levered with no organic growth and no margin of safety yet</span><span class="label">Reasons for and against</span></h4>
+<div class="final-score mid"><div class="fs-num">5.1<span>/ 10</span></div><div><b>Final score</b> — the reasons for and against roughly cancel out.<div class="hint">Reasons for weigh 2.60, reasons against 2.50; the score is the share on the “for” side.</div></div></div>
+<div class="sc-rows">
+<div class="sc-row"><span>Durable moat: systems-of-record switching costs, compliance lock-in, B2B-network scale</span><span class="sc-num pos">+0.60</span><span class="sc-effect"><i class="pos" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span>81% recurring revenue, 73.7% gross margin, customer-pre-funded (negative tangible capital)</span><span class="sc-num pos">+0.60</span><span class="sc-effect"><i class="pos" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span>Strong, stable free cash flow (~US$800M) — about 13% free cash flow yield, about 9 times earnings</span><span class="sc-num pos">+0.70</span><span class="sc-effect"><i class="pos" style="--e: 0.7"></i></span></div>
+<div class="sc-row"><span>Shareholder-friendly capital allocation: buybacks shrinking shares, growing well-covered dividend, ~US$3bn deleveraging</span><span class="sc-num pos">+0.40</span><span class="sc-effect"><i class="pos" style="--e: 0.4"></i></span></div>
+<div class="sc-row"><span>Clean accounting; cash earnings exceed reported (GAAP); no integrity red flag (Fisher 15 passes)</span><span class="sc-num pos">+0.30</span><span class="sc-effect"><i class="pos" style="--e: 0.3"></i></span></div>
+<div class="sc-row"><span>Flat-to-negative organic growth (−0.5% fiscal 2026); moat defends but doesn&#x27;t compound</span><span class="sc-num neg">−0.60</span><span class="sc-effect"><i class="neg" style="--e: 0.6"></i></span></div>
+<div class="sc-row"><span>High leverage: net debt US$4.8bn (above equity); refinancing of 6.90% 2027 notes</span><span class="sc-num neg">−0.50</span><span class="sc-effect"><i class="neg" style="--e: 0.5"></i></span></div>
+<div class="sc-row"><span>Only-adequate return on invested capital (about 9.8%) on acquisition-inflated capital; growth bought, not built</span><span class="sc-num neg">−0.40</span><span class="sc-effect"><i class="neg" style="--e: 0.4"></i></span></div>
+<div class="sc-row"><span>Negative tangible book; goodwill and intangibles US$8.8bn above equity of US$4.0bn — no asset floor</span><span class="sc-num neg">−0.30</span><span class="sc-effect"><i class="neg" style="--e: 0.3"></i></span></div>
+<div class="sc-row"><span>New-CEO strategy reset and serial-acquirer risk (another large deal could re-lever)</span><span class="sc-num neg">−0.30</span><span class="sc-effect"><i class="neg" style="--e: 0.3"></i></span></div>
+<div class="sc-row"><span>No margin of safety at C$32.30 (bear case about C$24 sits below the price)</span><span class="sc-num neg">−0.40</span><span class="sc-effect"><i class="neg" style="--e: 0.4"></i></span></div>
+</div>
+<div class="score-notes">
+<div class="score-note role"><b>Role in the portfolio</b><span>Diversifying about 3% cash-generative enterprise-software holding (not core); would reduce HMM.A-dominated concentration</span></div>
+<div class="score-note verdict"><b>Verdict</b><span>watch — positive expected value (about C$39 versus C$32.30) but buy only below about C$24</span></div>
+<div class="score-note"><b>Chance of a permanent loss</b><span>20%</span></div>
+</div>
+<div class="app-foot">Recorded by the agent, 7 Oct 2026 · sec:0001002638-26-000068 FY2026 10-K · XBRL fundamentals FY2019–FY2026 · steps/0013, 0018, 0027, 0029, 0031 · yahoo (unofficial) OTEX.TO quote 2026-10-06</div>
+</div>
+      </div>
     </div>
   </section>
 
-  <section class="wrap deep">
+  <section class="wrap stages-section">
     <div class="section-head">
-      <h2>What it does on every name.</h2>
-      <p>The work a careful analyst would do, on every company you follow, each time a new filing lands.</p>
+      <h2>Eighteen stages, in order.</h2>
+      <p>The same ordered analysis on every public company. The agent cannot leave a stage without written findings and citations, and it cannot record a thesis until risk and margin of safety are done.</p>
     </div>
-    <ol class="process">
-      <li>
-        <span class="process-n">01</span>
-        <h3>Pulls the filings</h3>
-        <p>Annual and quarterly reports, current reports and proxies come straight from SEC EDGAR as soon as they're filed. No manual downloads, no stale data.</p>
-      </li>
-      <li>
-        <span class="process-n">02</span>
-        <h3>Finds real earning power</h3>
-        <p>Reported earnings are adjusted for one-off and non-recurring items such as restructuring charges, asset sale gains, write-downs and litigation, to arrive at a normalized figure the business can actually repeat.</p>
-      </li>
-      <li>
-        <span class="process-n">03</span>
-        <h3>Takes the balance sheet apart</h3>
-        <p>It separates tangible from intangible assets, sets debt against total capitalization, and traces how net income flows through dividends and buybacks into retained earnings, checking that the numbers tie out.</p>
-      </li>
-      <li>
-        <span class="process-n">04</span>
-        <h3>Looks for trouble years ahead</h3>
-        <p>Every line item is read for problems that haven't reached the headline numbers yet: working capital drifting out of line with sales, funding needs the business may struggle to meet, leverage building faster than equity, and a competitive position starting to erode.</p>
-      </li>
-      <li>
-        <span class="process-n">05</span>
-        <h3>Judges capital allocation</h3>
-        <p>Buybacks, dividends, acquisitions and reinvestment are weighed against what they earned, including whether shares were bought back below or above what they were worth.</p>
-      </li>
-      <li>
-        <span class="process-n">06</span>
-        <h3>Spots special situations</h3>
-        <p>It watches for spin-offs, restructurings, recapitalizations and bankruptcies, where forced selling, index changes and sheer complexity often push prices away from value. Each one gets the full analysis, including what the company looks like on the other side.</p>
-      </li>
-      <li>
-        <span class="process-n">07</span>
-        <h3>Models the range of outcomes</h3>
-        <p>Instead of a single target price or a pass/fail screen, it builds a spread of statistical scenarios, a confidence range for how well the company fits your framework, and the probability of permanent loss, all updated as new figures come in.</p>
-      </li>
-      <li>
-        <span class="process-n">08</span>
-        <h3>Places it in the portfolio</h3>
-        <p>It looks at the sector and at how the company moves with what you already hold. It estimates what the position would add to overall return and to overall risk, and whether it diversifies the portfolio or doubles up on exposure you already carry.</p>
-      </li>
-      <li>
-        <span class="process-n">09</span>
-        <h3>Chooses how to own it</h3>
-        <p>The same view can be expressed in different ways. It compares outright stock, options and the company's debt, weighing payoff, downside and cost across the modeled outcomes, and suggests the structure that best fits the thesis. That might be senior debt that still recovers value in a bad scenario, or options that cap the loss.</p>
-      </li>
-    </ol>
+<div class="ui-tabs">
+<div class="ui-tablist" role="tablist">
+<button class="ui-tab" role="tab" id="eq-stages-g0-tab" aria-controls="eq-stages-g0" aria-selected="true">Sourcing and filings <span class="count">01–02</span></button>
+<button class="ui-tab" role="tab" id="eq-stages-g1-tab" aria-controls="eq-stages-g1" aria-selected="false">The statements <span class="count">03–12</span></button>
+<button class="ui-tab" role="tab" id="eq-stages-g2-tab" aria-controls="eq-stages-g2" aria-selected="false">The business <span class="count">13–14</span></button>
+<button class="ui-tab" role="tab" id="eq-stages-g3-tab" aria-controls="eq-stages-g3" aria-selected="false">The decision <span class="count">15–18</span></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-stages-g0" aria-labelledby="eq-stages-g0-tab">
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--pe)"><i>1</i><div><b>Idea sourcing and screening <small>optional</small></b><p>Screens on EV/EBIT, return on tangible capital and growth, plus a full-text search of filings for spin-offs, recapitalisations and other special situations. Optional: skipped when you hand it the company.</p></div></div>
+<div class="stage-item" style="--g: var(--pe)"><i>2</i><div><b>Filings and accounting quality</b><p>Pulls the 10-K and 10-Q from EDGAR, classifies the company (deep value, franchise, growth, special situation, turnaround, cyclical or financial) and tests whether reported earnings match cash earnings.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-stages-g1" aria-labelledby="eq-stages-g1-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--eq)"><i>3</i><div><b>Balance sheet</b><p>Tangible against intangible assets, net working capital, net fixed assets, and the capital the business really needs.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>4</i><div><b>Cash flow statement</b><p>Operating cash flow against net income, capital spending against depreciation, free cash flow every year.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>5</i><div><b>Income statement</b><p>Normalised operating income with one-offs removed; operating margin and its trend.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>6</i><div><b>Debt tables</b><p>Maturities, rates and covenants, and what refinancing will cost.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>7</i><div><b>Commitments and contingencies</b><p>Leases, guarantees, litigation and purchase obligations that sit off the balance sheet.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>8</i><div><b>Receivables and provision for credit losses</b><p>Receivables against sales, their ageing, and whether provisions keep pace.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>9</i><div><b>Market and segment analysis</b><p>Where the sales and profits come from, by segment and geography, and how each is moving.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>10</i><div><b>Inventory analysis</b><p>Inventory against sales and cost of sales; obsolescence and write-downs. Skipped, with the reason kept, at an asset-light company.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>11</i><div><b>Leases and real estate analysis</b><p>Operating leases, owned property, and what they are worth against what they are carried at.</p></div></div>
+<div class="stage-item" style="--g: var(--eq)"><i>12</i><div><b>Depreciation analysis</b><p>Economic against book depreciation, and the gap between capital spending and the charge.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-stages-g2" aria-labelledby="eq-stages-g2-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--re)"><i>13</i><div><b>Business quality and moat</b><p>Switching costs, scale, brands, and returns on capital through a cycle.</p></div></div>
+<div class="stage-item" style="--g: var(--re)"><i>14</i><div><b>Management and governance</b><p>The capital-allocation record: buybacks above or below value, dividends, acquisitions, pay, control and related parties.</p></div></div>
+</div>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-stages-g3" aria-labelledby="eq-stages-g3-tab" hidden>
+<div class="stage-list">
+<div class="stage-item" style="--g: var(--fi)"><i>15</i><div><b>Valuation</b><p>Earnings power value, normalised multiples, and bear, base and bull scenarios with their probabilities.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>16</i><div><b>Risk and margin of safety</b><p>What breaks the thesis, the chance of a permanent loss, and the price that leaves room for error.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>17</i><div><b>Decision, sizing and portfolio fit</b><p>Verdict, target weight, buy-below and trim-above prices, and whether the position diversifies the book or adds to exposure you already carry.</p></div></div>
+<div class="stage-item" style="--g: var(--fi)"><i>18</i><div><b>Monitoring and selling</b><p>Sell triggers, what would change the agent&#x27;s mind, and what to watch in the next filing.</p></div></div>
+</div>
+</div>
+</div>
+  </section>
+
+  <section class="band-dark mem-section" id="memory">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">Memory and skills</span>
+        <h2>What the agent brings to each stage.</h2>
+        <p>At each stage the agent is pushed the rules and skills tagged for that stage, filtered to the company&#x27;s playbook: a deep-value holding gets Graham&#x27;s tests, a franchise gets the moat and return-on-capital work. Below, examples from the library. Click a skill for what it does.</p>
+      </div>
+      <div class="split mem-split">
+        <div>
+<div class="mx-kinds">
+            <div><b>Episodes</b><span>Decisions, corrections and approvals, recorded as they happen.</span></div>
+            <div><b>Rules</b><span>Value and process rules, each with a why and a confidence.</span></div>
+            <div><b>Skills</b><span>Written procedures, one per task: normalise earnings, read covenants, value a REIT.</span></div>
+            <div><b>Knowledge</b><span>Framework notes and company files the agent keeps between sessions.</span></div>
+          </div>
+          <p class="mem-note">Skills are procedures the agent follows. Rules are standing value and process rules; each has a why, a confidence and a lifecycle, and none changes the agent&#x27;s behaviour until you approve it.</p>
+          <a href="platform-memory.html" class="pill pill-light">How memory works →</a>
+        </div>
+<div class="mx" style="--hue: var(--eq)"><details class="mx-stage"><summary><span class="mx-n">∗</span><b>Every stage</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Never state prices, multiples or consensus estimates without a market-data source; if none is configured, say so and work from filings</div><div class="mx-rule"><span class="label">value rule</span>Never treat a high dividend yield as a reason to buy: a yield that is high because the price fell is often a return of capital from a weakening business</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">1</span><b>Idea sourcing and screening</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="To build or refresh a list of out-of-favour candidates (absolute or within industries), and to vet them before full research. Based on Dreman&#x27;s A-B-C rules and five indicators." data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="contrarian-low-multiple-selection" data-pop-body="To build or refresh a list of out-of-favour candidates (absolute or within industries), and to vet them before full research. Based on Dreman&#x27;s A-B-C rules and five indicators." data-pop-src="data/memory/procedural/skills/public_equities/contrarian-low-multiple-selection/SKILL.md · status: active" role="button" tabindex="0">contrarian-low-multiple-selection</span><span class="mx-skill" title="To run idea generation through to a buy decision for a potential long-term compounder, following the sequence Fisher describes in ch. 10. Extends skill-scuttlebutt-channel-check with the upstream sourcing and downstream…" data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="fisher-growth-stock-search-funnel" data-pop-body="To run idea generation through to a buy decision for a potential long-term compounder, following the sequence Fisher describes in ch. 10. Extends skill-scuttlebutt-channel-check with the upstream sourcing and downstream management-visit gates." data-pop-src="data/memory/procedural/skills/public_equities/fisher-growth-stock-search-funnel/SKILL.md · status: active" role="button" tabindex="0">fisher-growth-stock-search-funnel</span><span class="mx-skill" title="Step 6. Spot spin-offs, restructurings and bankruptcies and analyze them on their own terms." data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="special-situations" data-pop-body="Step 6. Spot spin-offs, restructurings and bankruptcies and analyze them on their own terms." data-pop-src="data/memory/procedural/skills/public_equities/special-situations/SKILL.md · status: active" role="button" tabindex="0">special-situations</span><span class="mx-skill" title="Any announced spin-off, split-off, partial spin-off (carve-out IPO) or rights-offering separation, for both the new company and the parent. Greenblatt cites a Penn State study (25 years to 1988) where spin-offs beat…" data-pop-kicker="Skill · Idea sourcing and screening" data-pop-title="spinoff-analysis-checklist" data-pop-body="Any announced spin-off, split-off, partial spin-off (carve-out IPO) or rights-offering separation, for both the new company and the parent. Greenblatt cites a Penn State study (25 years to 1988) where spin-offs beat peers and the S&amp;P 500 by ~10%/yr over their first three years and parents beat peers by ~6%/yr, with the strongest gains in year two." data-pop-src="data/memory/procedural/skills/public_equities/spinoff-analysis-checklist/SKILL.md · status: active" role="button" tabindex="0">spinoff-analysis-checklist</span></div><div class="mx-rule"><span class="label">process rule</span>Before buying an apparent bargain, identify why it is cheap; prefer mispricings explained by forced or non-economic selling</div><div class="mx-rule"><span class="label">process rule</span>Every idea must state why we are on the right side of the trade: specialized knowledge, or exploiting a documented behavioral/institutional bias</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">2</span><b>Filings and accounting quality</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Do not let the tone of an annual report or investor presentation drive a buy; go beyond it to the facts, but treat omission of significant information as a negative</div><div class="mx-rule"><span class="label">process rule</span>Fisher point 10: treat cost-accounting quality as essential but hard to verify; look for evidence of deficiency and otherwise infer it from overall managerial excellence</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">3</span><b>Balance sheet</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Before buying any stock, state what the whole business is selling for and what tangible resources that price buys</div><div class="mx-rule"><span class="label">process rule</span>Deduct only truly excess cash from EV, haircut it for what management will do with it, and compute the return on the full price paid including the cash</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">4</span><b>Cash flow statement</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Classify retained earnings before crediting them: hoarded cash, empire-building at low returns, competitive-parity spending and inflation-driven replacement add no per-share value</div><div class="mx-rule"><span class="label">process rule</span>Compute owner earnings/FCF from the cash flow statement&#x27;s change in non-cash working capital, never by netting the balance-sheet &#x27;working capital&#x27; line against net income</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">5</span><b>Income statement</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Before calling any business a &#x27;durable competitive advantage&#x27; / franchise, and whenever a thesis assumes margins or returns will persist. Uses 10 years of statements; look for consistency, not one good year." data-pop-kicker="Skill · Income statement" data-pop-title="durable-moat-financial-statement-test" data-pop-body="Before calling any business a &#x27;durable competitive advantage&#x27; / franchise, and whenever a thesis assumes margins or returns will persist. Uses 10 years of statements; look for consistency, not one good year." data-pop-src="data/memory/procedural/skills/public_equities/durable-moat-financial-statement-test/SKILL.md · status: active" role="button" tabindex="0">durable-moat-financial-statement-test</span><span class="mx-skill" title="Step 2 of a Greenwald valuation for any going concern; the primary value for stable non-franchise businesses." data-pop-kicker="Skill · Income statement" data-pop-title="earnings-power-value" data-pop-body="Step 2 of a Greenwald valuation for any going concern; the primary value for stable non-franchise businesses." data-pop-src="data/memory/procedural/skills/public_equities/earnings-power-value/SKILL.md · status: active" role="button" tabindex="0">earnings-power-value</span><span class="mx-skill" title="Before comparing EPS across periods or accepting an &#x27;earnings beat&#x27;; complements normalize-earnings by focusing on the year-over-year change contributed by non-operating/non-recurring (NO/NR) items, which is where…" data-pop-kicker="Skill · Income statement" data-pop-title="nonoperating-nonrecurring-eps-bridge" data-pop-body="Before comparing EPS across periods or accepting an &#x27;earnings beat&#x27;; complements normalize-earnings by focusing on the year-over-year change contributed by non-operating/non-recurring (NO/NR) items, which is where Oglove found most surprises." data-pop-src="data/memory/procedural/skills/public_equities/nonoperating-nonrecurring-eps-bridge/SKILL.md · status: active" role="button" tabindex="0">nonoperating-nonrecurring-eps-bridge</span><span class="mx-skill" title="Step 2. Strip one-off items from reported earnings, line by line with sources, to get normalized EPS." data-pop-kicker="Skill · Income statement" data-pop-title="normalize-earnings" data-pop-body="Step 2. Strip one-off items from reported earnings, line by line with sources, to get normalized EPS." data-pop-src="data/memory/procedural/skills/public_equities/normalize-earnings/SKILL.md · status: active" role="button" tabindex="0">normalize-earnings</span></div><div class="mx-rule"><span class="label">process rule</span>After a big-bath write-off, separate the reserve release and lower depreciation from genuine recovery</div><div class="mx-rule"><span class="label">process rule</span>Anchor value on what a private buyer would pay for normalized earnings; use DCF in reverse as a reality check and a growth-rate matrix to cross-check any exit multiple</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">6</span><b>Debt tables</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>For leveraged companies, measure the margin of safety on the enterprise (core business value vs market EV), not on the equity alone</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">9</span><b>Market and segment analysis</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Do not treat a low multiple of yesterday&#x27;s results as a bargain in a business facing technological disruption or secular decline; underwrite the future cash-flow path, market size and &#x27;right to win&#x27; first</div><div class="mx-rule"><span class="label">value rule</span>A conservative stock must be the lowest-cost (or near-lowest) producer or operator in most of its lines, with the margin cushion to outlast competitors in bad years and self-fund growth</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">12</span><b>Depreciation analysis</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Test depreciation and maintenance adequacy before accepting reported earnings</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">13</span><b>Business quality and moat</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="The first deep pass on any new equity idea, before building an earnings model. This is Todd Combs&#x27;s process (Part IV introduction): good business x good management x good price. The test is multiplicative, so a zero in…" data-pop-kicker="Skill · Business quality and moat" data-pop-title="combs-inside-out-business-analysis" data-pop-body="The first deep pass on any new equity idea, before building an earnings model. This is Todd Combs&#x27;s process (Part IV introduction): good business x good management x good price. The test is multiplicative, so a zero in any one element zeroes the idea, although strengths can trade off by degree." data-pop-src="data/memory/procedural/skills/public_equities/combs-inside-out-business-analysis/SKILL.md · status: active" role="button" tabindex="0">combs-inside-out-business-analysis</span><span class="mx-skill" title="The qualitative business-and-management assessment of any candidate long-term holding (growth or value), after a first financial screen. Builds on sem-eq-fisher-s-fifteen-points-qualitative-test-rybjzj; each point has…" data-pop-kicker="Skill · Business quality and moat" data-pop-title="fisher-fifteen-point-evaluation-worksheet" data-pop-body="The qualitative business-and-management assessment of any candidate long-term holding (growth or value), after a first financial screen. Builds on sem-eq-fisher-s-fifteen-points-qualitative-test-rybjzj; each point has its own conv-eq-fisher-point-N item with detailed criteria." data-pop-src="data/memory/procedural/skills/public_equities/fisher-fifteen-point-evaluation-worksheet/SKILL.md · status: active" role="button" tabindex="0">fisher-fifteen-point-evaluation-worksheet</span></div><div class="mx-rule"><span class="label">process rule</span>Fisher point 3: judge R&amp;D by output per dollar and by how it is organised, not by R&amp;D-to-sales ratios</div><div class="mx-rule"><span class="label">process rule</span>Fisher point 7: assess labour and personnel relations from comparative evidence (turnover, applicant queues, grievance handling, relative pay), not from strike counts alone</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">14</span><b>Management and governance</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Assess management by incentives and actions, not words: compare cash pay with stock ownership, read option timing at corporate events, and treat consistent buybacks of a cheap stock as a positive signal</div><div class="mx-rule"><span class="label">process rule</span>Assess management on three traits: rational capital allocation, candour with shareholders, and resistance to the institutional imperative</div></div></details>
+<details class="mx-stage" open><summary><span class="mx-n">15</span><b>Valuation</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Whenever a DCF, capitalized-earnings or EPV valuation needs a discount rate; produce a range from several methods instead of one number. Method follows the Duff &amp; Phelps Valuation Handbook (data as of March 2017…" data-pop-kicker="Skill · Valuation" data-pop-title="cost-of-capital-build" data-pop-body="Whenever a DCF, capitalized-earnings or EPV valuation needs a discount rate; produce a range from several methods instead of one number. Method follows the Duff &amp; Phelps Valuation Handbook (data as of March 2017; refresh all market inputs to the valuation date)." data-pop-src="data/memory/procedural/skills/public_equities/cost-of-capital-build/SKILL.md · status: active" role="button" tabindex="0">cost-of-capital-build</span><span class="mx-skill" title="Valuing a growing franchise (Case C: EPV &gt;&gt; AV, moat confirmed). Intrinsic value of growth stocks is too sensitive to growth and discount rates to be useful, so estimate the expected return at today&#x27;s price instead." data-pop-kicker="Skill · Valuation" data-pop-title="franchise-return-valuation" data-pop-body="Valuing a growing franchise (Case C: EPV &gt;&gt; AV, moat confirmed). Intrinsic value of growth stocks is too sensitive to growth and discount rates to be useful, so estimate the expected return at today&#x27;s price instead." data-pop-src="data/memory/procedural/skills/public_equities/franchise-return-valuation/SKILL.md · status: active" role="button" tabindex="0">franchise-return-valuation</span><span class="mx-skill" title="Comparing companies in the same industry to find relative under- or overvaluation, or to justify swapping one holding for another (Graham and Dodd ch. 49, &#x27;Form III&#x27; industrial comparison, adapted)." data-pop-kicker="Skill · Valuation" data-pop-title="graham-peer-comparison-table" data-pop-body="Comparing companies in the same industry to find relative under- or overvaluation, or to justify swapping one holding for another (Graham and Dodd ch. 49, &#x27;Form III&#x27; industrial comparison, adapted)." data-pop-src="data/memory/procedural/skills/public_equities/graham-peer-comparison-table/SKILL.md · status: active" role="button" tabindex="0">graham-peer-comparison-table</span></div><div class="mx-rule"><span class="label">process rule</span>Adjust for excess cash OR for a debt-free earnings conversion, never both — EV/EBIT already nets the cash</div><div class="mx-rule"><span class="label">process rule</span>Always reconcile asset value against EPV and classify the company as Case A, B or C before deciding what to buy or pay for</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">16</span><b>Risk and margin of safety</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Step 4. Look forward for working-capital, capex, leverage and competitive-erosion risks." data-pop-kicker="Skill · Risk and margin of safety" data-pop-title="forward-risks" data-pop-body="Step 4. Look forward for working-capital, capex, leverage and competitive-erosion risks." data-pop-src="data/memory/procedural/skills/public_equities/forward-risks/SKILL.md · status: active" role="button" tabindex="0">forward-risks</span><span class="mx-skill" title="Step 7. Model bear/base/bull scenarios with a confidence range and an explicit probability of permanent loss." data-pop-kicker="Skill · Risk and margin of safety" data-pop-title="scenarios-and-permanent-loss" data-pop-body="Step 7. Model bear/base/bull scenarios with a confidence range and an explicit probability of permanent loss." data-pop-src="data/memory/procedural/skills/public_equities/scenarios-and-permanent-loss/SKILL.md · status: active" role="button" tabindex="0">scenarios-and-permanent-loss</span></div><div class="mx-rule"><span class="label">value rule</span>Rank risk by the gap between business quality and the market&#x27;s appraisal: buy high-quality companies appraised below or in line with their fundamentals, hold but do not newly buy &#x27;legendary&#x27; overvalued ones, and avoid any company…</div><div class="mx-rule"><span class="label">value rule</span>Buy only with a margin of safety between price and the low end of our intrinsic-value range.</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">17</span><b>Decision, sizing and portfolio fit</b></summary><div class="mx-body"><div class="mx-skills"><span class="mx-skill" title="Step 8. Fit the idea to the portfolio — return contribution, correlation, liquidity, sector exposure, limits." data-pop-kicker="Skill · Decision, sizing and portfolio fit" data-pop-title="portfolio-fit" data-pop-body="Step 8. Fit the idea to the portfolio — return contribution, correlation, liquidity, sector exposure, limits." data-pop-src="data/memory/procedural/skills/public_equities/portfolio-fit/SKILL.md · status: active" role="button" tabindex="0">portfolio-fit</span><span class="mx-skill" title="Step 9. Choose how to express the view — common stock, options, or the company&#x27;s debt." data-pop-kicker="Skill · Decision, sizing and portfolio fit" data-pop-title="structure-choice" data-pop-body="Step 9. Choose how to express the view — common stock, options, or the company&#x27;s debt." data-pop-src="data/memory/procedural/skills/public_equities/structure-choice/SKILL.md · status: active" role="button" tabindex="0">structure-choice</span></div><div class="mx-rule"><span class="label">process rule</span>Deploy new money into a chosen outstanding stock as soon as a buy point appears, ignoring macro guesses; but when starting a portfolio after a long rise, stage purchases over several years</div><div class="mx-rule"><span class="label">process rule</span>Execution for long-term quality buys: do not haggle over small price increments, judge liquidity by real market depth rather than listing venue, and give a trusted trader size and price latitude for large blocks</div></div></details>
+<details class="mx-stage"><summary><span class="mx-n">18</span><b>Monitoring and selling</b></summary><div class="mx-body"><div class="mx-rule"><span class="label">process rule</span>Fisher&#x27;s three-year rule: when buying against consensus, judge the position over three years, hold through interim underperformance if the thesis is intact, and sell a conviction holding that has not performed after three years…</div><div class="mx-rule"><span class="label">process rule</span>For contrarian positions, fix the sell point at purchase: sell when the multiple reaches the market&#x27;s, after ~2.5-3 years of disappointment, or at once on a major fundamental deterioration</div></div></details></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-tint tint-eq inapp" id="inapp">
+    <div class="wrap">
+      <div class="plat-head">
+        <span class="tag">In the platform</span>
+        <h2>What it looks like in the Shydel Agent.</h2>
+        <p>This is the agent working an equity, from the first filing to the scorecard, recorded on the board.</p>
+      </div>
+<div class="ui-tabs vertical" style="--hue: var(--eq)">
+<div class="ui-tablist" role="tablist" aria-label="Views of the platform">
+<span class="label">In the app</span>
+<button class="ui-tab" role="tab" id="eq-view-v0-tab" aria-controls="eq-view-v0" aria-selected="true"><b>Every stage, written up and cited.</b><small>Session · Overview</small></button>
+<button class="ui-tab" role="tab" id="eq-view-v1-tab" aria-controls="eq-view-v1" aria-selected="false"><b>Scored the way your firm scores.</b><small>Portfolio · Scorecard</small></button>
+<button class="ui-tab" role="tab" id="eq-view-v2-tab" aria-controls="eq-view-v2" aria-selected="false"><b>Your rules, pushed at every stage.</b><small>Session · Usage</small></button>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-view-v0" aria-labelledby="eq-view-v0-tab">
+<figure class="frame frame-tall-md" style="--hue: var(--eq)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">overview · Open Text (OTEX.TO)</span></div>
+<img src="assets/app/overview-full.webp" alt="The session overview: the goal, the stage track with each stage done or skipped, the conclusion so far, and findings by stage." width="1864" height="1816" loading="lazy">
+</figure>
+<div class="panel-text"><h3>Every stage, written up and cited.</h3><p>The session overview shows the goal, the stage track with what was done and what was skipped, the conclusion so far, and a finding for each stage. Each finding is marked as supporting the thesis, neutral or skipped, with the reason kept. Click a stage for the numbers and their sources.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-view-v1" aria-labelledby="eq-view-v1-tab" hidden>
+<figure class="frame" style="--hue: var(--eq)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">scorecard · Lassonde (LAS-A.TO)</span></div>
+<img src="assets/app/scorecard-las.webp" alt="A scorecard in the app: the final score, reasons for and against with green and red bars, the role in the portfolio, the verdict and the chance of a permanent loss." width="1768" height="1360" loading="lazy">
+</figure>
+<div class="panel-text"><h3>Scored the way your firm scores.</h3><p>Every reason for and against the company, each with its effect; a final score out of ten; the role it would play in the portfolio; a verdict, and the price at which to start a position.</p></div>
+</div>
+<div class="ui-panel" role="tabpanel" id="eq-view-v2" aria-labelledby="eq-view-v2-tab" hidden>
+<figure class="frame frame-tall-md" style="--hue: var(--eq)">
+<div class="frame-bar"><i></i><i></i><i></i><span class="frame-url">session · usage</span></div>
+<img src="assets/app/usage.webp" alt="The Usage tab for the Open Text session: a timeline of skills and rules pushed automatically at each stage change, working memory actions and tool calls, with counts for tools used, items pushed and items pulled." width="1660" height="2000" loading="lazy">
+</figure>
+<div class="panel-text"><h3>Your rules, pushed at every stage.</h3><p>The Usage tab shows what the agent was given and what it asked for: the firm-wide rules and the public equities rules pushed at the start of each stage, the skills it loaded for the playbook, and every tool it called, in order.</p></div>
+</div>
+</div>
+      <div class="inapp-foot">
+        <a href="platform.html" class="pill pill-accent">See the whole platform →</a>
+      </div>
+    </div>
   </section>
 
   <section class="wrap uses">
@@ -166,11 +255,12 @@
   </section>
 
   <section class="wrap other">
-    <h2>Other areas we cover</h2>
+    <h2>Other asset classes</h2>
     <div class="other-links">
+      <a href="financials.html" class="pill pill-outline">Financials</a>
+      <a href="fixed-income.html" class="pill pill-outline">Fixed income</a>
       <a href="private-equity.html" class="pill pill-outline">Private equity</a>
       <a href="real-estate.html" class="pill pill-outline">Real estate</a>
-      <a href="fixed-income.html" class="pill pill-outline">Fixed income</a>
     </div>
   </section>
 
@@ -178,8 +268,8 @@
     <div class="cta">
       <h2>Let's talk about your portfolio.</h2>
       <div class="cta-side">
-        <a href="mailto:admin@shydel.com" class="pill pill-light pill-lg">Book an intro call →</a>
-        <span class="cta-email">admin@shydel.com</span>
+        <a href="https://bookings.cloud.microsoft/book/Shydel1@shydel.com/" target="_blank" rel="noopener" class="pill pill-light pill-lg">Book an intro call →</a>
+        <a href="mailto:admin@shydel.com" class="cta-email">admin@shydel.com</a>
       </div>
     </div>
   </section>
@@ -189,13 +279,16 @@
   <span>© 2026 Shydel</span>
   <nav class="footer-nav">
     <a href="index.html">Home</a>
+    <a href="platform.html">Platform</a>
+    <a href="public-equities.html">Public equities</a>
+    <a href="financials.html">Financials</a>
+    <a href="fixed-income.html">Fixed income</a>
     <a href="private-equity.html">Private equity</a>
     <a href="real-estate.html">Real estate</a>
-    <a href="public-equities.html">Public equities</a>
-    <a href="fixed-income.html">Fixed income</a>
     <a href="about.html">About</a>
   </nav>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>
