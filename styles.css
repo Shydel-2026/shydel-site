@@ -528,10 +528,10 @@ a.asset-card:active { transform: scale(0.99); }
 /* Team */
 .team { padding-top: 24px; padding-bottom: 40px; }
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
-.person { background: var(--card); border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 20px; }
-.person img { width: 100%; height: 440px; object-fit: cover; object-position: center 30%; border-radius: 12px; }
-.person img.pos-high { object-position: center 25%; }
-.person-body { padding: 0 12px 16px; }
+.person { background: var(--card); border-radius: 20px; padding: 16px; display: grid; grid-template-columns: 240px 1fr; gap: 24px; align-items: start; }
+/* Headshots are 3:4 portraits; keep that ratio so nothing is cropped or stretched */
+.person img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; border-radius: 12px; background: #F3F2EE; }
+.person-body { padding: 8px 8px 8px 0; }
 .person-name { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
 .person h3 { font-size: 30px; font-weight: 700; letter-spacing: -0.03em; }
 .person p { margin-top: 12px; color: var(--text-2); font-size: 16px; }
@@ -762,7 +762,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .lede { font-size: 19px; }
   .card { min-height: 280px; padding: 24px; }
   .card h3 { font-size: 28px; }
-  .person img { height: 360px; }
+  .person { grid-template-columns: 1fr; gap: 16px; }
+  .person img { max-width: 320px; }
+  .person-body { padding: 0 8px 8px; }
   .approach, .team { padding-top: 32px; padding-bottom: 28px; }
 }
 
