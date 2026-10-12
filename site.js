@@ -68,6 +68,24 @@
     select(initial);
   });
 
+  // ---- Video cards: the play button swaps the YouTube thumbnail for the embedded player
+  document.querySelectorAll(".video[data-yt]").forEach(function (card) {
+    var thumb = card.querySelector(".video-thumb");
+    if (!thumb) return;
+    thumb.addEventListener("click", function (e) {
+      e.preventDefault();
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(card.getAttribute("data-yt")) + "?autoplay=1&rel=0";
+      f.title = thumb.getAttribute("aria-label") || "Video";
+      f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      f.setAttribute("allowfullscreen", "");
+      var holder = document.createElement("div");
+      holder.className = "video-thumb";
+      holder.appendChild(f);
+      thumb.replaceWith(holder);
+    });
+  });
+
   // ---- One shared dialog for stage findings; any element with data-pop-title opens it
   var pop = null;
   function ensurePop() {
