@@ -41,6 +41,10 @@ Newest first in both lists. Keep the summaries to what the video says; the not-f
 
 `assets/app/` holds screenshots of the Shydel Agent web UI (`../shydel-agent`, run with `.\dev.ps1`), captured with Playwright at 1600×1000 @2x, cropped to the relevant region and exported as WebP. Portfolio values and share counts are blurred in the app before capture. Retake them when the app's UI changes.
 
+## Brand
+
+The logo (mark, wordmark, lockups) lives in `assets/logo/` as SVG and PNG; `assets/favicon.svg`, `assets/apple-touch-icon.png` and `assets/og-image.png` (the social share image every page points to) come from the same files. YouTube exports and usage notes are in `brand/`.
+
 ## To do
 
 - Point the shydel.com domain at the host (Vercel or GitHub Pages).
