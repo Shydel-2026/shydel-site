@@ -908,3 +908,18 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .legend .meet-links { margin-top: 18px; }
 @media (max-width: 860px) { .legend ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .legend ol { grid-template-columns: 1fr; } }
+
+/* Two examples side by side, one panel per company */
+.ex-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.ex { background: #161615; border: 1px solid #2E2E2C; border-top: 4px solid var(--hue); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.ex .tag { color: var(--hue); }
+.ex h3 { color: #FFFFFF; font-size: clamp(22px, 2vw, 28px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.ex p { color: #C9C9C4; }
+.ex .frame { width: 100%; margin: 4px 0 0; }
+.ex .frame img { width: 100%; }
+.ex .kfig { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: auto; padding-top: 8px; }
+/* Scorecard: text and weights beside the screenshot */
+.score-split { display: grid; grid-template-columns: minmax(300px, 1fr) auto; gap: 32px 48px; align-items: center; }
+.score-split > .frame { margin: 0; }
+@media (max-width: 1100px) { .ex .kfig { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 1000px) { .ex-grid, .score-split { grid-template-columns: 1fr; } }
