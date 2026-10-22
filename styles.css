@@ -880,3 +880,22 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .frame img { width: auto; max-width: 100%; height: auto; max-height: min(72vh, 780px); }
 .frame-bar { min-width: 0; }
 .frame-url { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Filling the space: columns that hug the screenshot, key figures beside it, a legend beside the board */
+.zig:has(> .zig-media > .frame) { grid-template-columns: minmax(300px, 1fr) auto; }
+.zig.flip:has(> .zig-media > .frame) { grid-template-columns: auto minmax(300px, 1fr); }
+.zig-media > .frame { margin-inline: 0; }
+.kfig { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 24px 0 0; }
+.kfig div { background: #1C1C1B; border: 1px solid #2E2E2C; border-radius: 14px; padding: 14px 16px; }
+.kfig dt { font-size: clamp(20px, 2vw, 28px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; color: #FFFFFF; }
+.kfig dd { margin: 4px 0 0; font-size: 13px; color: #B5B5B0; }
+.shot-split { display: grid; grid-template-columns: auto minmax(240px, 1fr); gap: 32px 48px; align-items: center; }
+.shot-split > .frame { margin-inline: 0; }
+.legend ol { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 18px; }
+.legend li { padding-left: 16px; border-left: 3px solid var(--c, var(--accent)); color: var(--text-2); font-size: 15.5px; }
+.legend b { display: block; color: var(--ink); font-size: 17px; margin-bottom: 2px; }
+.legend .meet-links { margin-top: 24px; }
+@media (max-width: 860px) {
+  .zig:has(> .zig-media > .frame), .zig.flip:has(> .zig-media > .frame), .shot-split { grid-template-columns: 1fr; }
+  .zig-media > .frame, .shot-split > .frame { margin-inline: auto; }
+}
