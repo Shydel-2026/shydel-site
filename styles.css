@@ -899,3 +899,12 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .zig:has(> .zig-media > .frame), .zig.flip:has(> .zig-media > .frame), .shot-split { grid-template-columns: 1fr; }
   .zig-media > .frame, .shot-split > .frame { margin-inline: auto; }
 }
+
+/* The board keeps the full width; its legend runs above it in four columns */
+.shot-split { grid-template-columns: 1fr; gap: 20px; }
+.shot-split > .legend { order: -1; }
+.shot-split > .frame { margin-inline: auto; }
+.legend ol { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px 24px; }
+.legend .meet-links { margin-top: 18px; }
+@media (max-width: 860px) { .legend ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .legend ol { grid-template-columns: 1fr; } }

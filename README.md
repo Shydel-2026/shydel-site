@@ -38,7 +38,7 @@ Newest first in both lists. Keep the summaries to what the video says; the not-f
 
 ## Screenshots
 
-`assets/app/` holds screenshots of the Shydel Agent web UI (`../shydel-agent`, run with `.\dev.ps1`), captured with Playwright at 1600×1000 @2x, cropped to the relevant region and exported as WebP. Portfolio values and share counts are blurred in the app before capture. Retake them when the app's UI changes. The `vi-*` files are the October 2026 set. Wait for a card's thesis to finish loading before capturing it.
+`assets/app/` holds screenshots of the Shydel Agent web UI (`../shydel-agent`, run with `.\dev.ps1`), captured with Playwright at 1600×1000 @2x, cropped to the relevant region and exported as WebP. Portfolio values and share counts are blurred in the app before capture. Retake them when the app's UI changes. The `vi-*` files are the October 2026 set: tight crops of one element or about one paragraph, captured at 2x and shown at half their pixel width (`style="width: …px"` on the `<img>`), so the text reads at the app's real size. Wait for a card's thesis to load before capturing, and take screenshots from the already-running app; never start, restart or stop its servers.
 
 ## Brand
 
