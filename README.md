@@ -10,11 +10,11 @@ python -m http.server 8000
 
 ## Pages
 
-The top menu is Home · Platform · Resources · About. Platform has two pages, Overview and Assets, each with its own tabs.
+The top menu is Home · Platform · Resources · About.
 
 - `index.html` — home
-- `platform.html` — the overview, with tabs for Process (level 1 numbers, levels 2–3, the top-pick card, the stress test, the level 5 portfolio review), Analysis (18 stages, comparison table, scorecard), Memory and Data; `platform.html#memory` opens that tab
-- `assets.html` — a tab per asset class (public equities, financials, fixed income, private equity, real estate); `assets.html#real-estate` opens that tab
+- `platform.html` — tabs for Process (level 1 numbers, levels 2–3, the top-pick card, the stress test, the level 5 portfolio review), Analysis (the value framework, the playbooks, the 18 stages, a financial and an operating-business example, the scorecard), Memory and Data; `platform.html#analysis` opens that tab
+- `assets.html` — redirects to `platform.html#analysis` (the old asset-class page; kept so existing links still land)
 - `resources.html` — the five published analyses: a video card per YouTube upload (click-to-play embed, falls back to a YouTube link) and a slide-deck card per PDF
 - `about.html`
 
@@ -22,10 +22,9 @@ All pages share `styles.css` and `site.js` (tabs, dropdowns, stage pop-ups, scre
 
 ## Content rules
 
-- Describe the product in general terms. Do not quote live counts (skills, rules, tools, holdings) or current build status in the prose; the library and the board change every day.
-- The app-styled cards (goal, stage track, scorecard) and the screenshots are the only places real figures appear. Open Text, VICI and E-L Financial use the agent's recorded cards; the fixed income and private equity cards are labelled illustrative.
-- Each asset page shows views specific to that class; avoid repeating the same kind of screenshot across asset pages.
-- Stage labels are the agent's `ANALYSIS_STAGES`; scorecard weights are its `SCORE_MEASURES` (`backend/shydel_agent/key_metrics.py`), grouped by research level on the Platform page. Colours are the agent's asset-class palette (`--eq`, `--fn`, `--fi`, `--pe`, `--re`).
+- Write for value investors, not engineers: describe the value framework and the analysis, not the agent's tools, skills or internals. Do not quote live counts (rules, holdings) or build status; the board changes every day.
+- Keep examples few: one financial (E-L Financial) and one operating business (Trigano) carry the Analysis tab. Figures in the prose come from the agent's recorded cards and appear in the screenshots.
+- Stage labels are the agent's `ANALYSIS_STAGES`; scorecard weights are its `SCORE_MEASURES` (`backend/shydel_agent/key_metrics.py`), grouped by research level on the Platform page. Colours are the agent's palette (`--eq`, `--fn`, `--fi`, `--pe`, `--re`).
 
 ## Resources
 
@@ -39,7 +38,7 @@ Newest first in both lists. Keep the summaries to what the video says; the not-f
 
 ## Screenshots
 
-`assets/app/` holds screenshots of the Shydel Agent web UI (`../shydel-agent`, run with `.\dev.ps1`), captured with Playwright at 1600×1000 @2x, cropped to the relevant region and exported as WebP. Portfolio values and share counts are blurred in the app before capture. Retake them when the app's UI changes. The `vi-*` files (October 2026) are the value-investing set used by Home and Platform; the older files are still used by `assets.html`.
+`assets/app/` holds screenshots of the Shydel Agent web UI (`../shydel-agent`, run with `.\dev.ps1`), captured with Playwright at 1600×1000 @2x, cropped to the relevant region and exported as WebP. Portfolio values and share counts are blurred in the app before capture. Retake them when the app's UI changes. The `vi-*` files are the October 2026 set. Wait for a card's thesis to finish loading before capturing it.
 
 ## Brand
 

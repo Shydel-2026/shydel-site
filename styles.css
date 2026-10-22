@@ -844,3 +844,24 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .principles { padding-top: 24px; padding-bottom: 40px; }
 .principles .use { border-top: 5px solid var(--c, var(--accent)); }
 .principles .use .tag { color: var(--c, var(--accent)); }
+
+/* The value framework: six principles, the playbooks, the stages in four columns */
+.framework { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.framework .use { border-top: 5px solid var(--c, var(--accent)); display: flex; flex-direction: column; }
+.framework .use .tag { color: var(--c, var(--accent)); }
+.framework .use p { flex: 1; }
+.fw-src { display: block; margin-top: 16px; padding-top: 12px; border-top: 1px solid #ECEAE3; font-family: var(--mono); font-size: 12px; color: var(--text-3); text-transform: uppercase; }
+.playbooks .src { background: #1C1C1B; color: var(--bg); }
+.playbooks .src p { color: #B5B5B0; }
+.stage-cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.stage-cols h3 { font-size: 18px; letter-spacing: -0.02em; margin-bottom: 12px; display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.stage-cols h3 span { font-family: var(--mono); font-size: 12px; font-weight: 400; color: var(--text-3); }
+.band-dark .fact { color: var(--ink); }
+.mem-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 32px; }
+@media (max-width: 1100px) {
+  .framework { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stage-cols, .mem-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .framework, .stage-cols, .mem-facts { grid-template-columns: 1fr; }
+}
