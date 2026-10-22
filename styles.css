@@ -874,3 +874,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .framework, .stage-grid, .mem-facts, .sg-list.two { grid-template-columns: 1fr; }
   .sg-wide { grid-column: auto; }
 }
+
+/* Every screenshot fits on one screen: the frame shrinks to the image, the image to the viewport height */
+.frame { width: fit-content; max-width: 100%; margin-inline: auto; }
+.frame img { width: auto; max-width: 100%; height: auto; max-height: min(72vh, 780px); }
+.frame-bar { min-width: 0; }
+.frame-url { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
