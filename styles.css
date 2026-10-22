@@ -678,7 +678,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .weights th { text-align: left; font-weight: 500; font-size: 15px; padding: 9px 0; width: 46%; }
 .weights th small { display: block; font-size: 12px; color: var(--text-3); }
 .weights td { padding: 9px 0; font-family: var(--mono); font-size: 13px; display: flex; align-items: center; gap: 12px; }
-.weights td i { display: block; height: 10px; width: calc(var(--w) * 3%); background: var(--c, var(--accent)); border-radius: 999px; }
+.weights td i { display: block; height: 10px; width: calc(var(--w) * 2.2%); background: var(--c, var(--accent)); border-radius: 999px; }
 .weights tr { border-bottom: 1px solid #D4D0C4; }
 .band-sand .small { margin-top: 20px; font-size: 14px; color: var(--text-3); }
 
@@ -824,3 +824,23 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .video-body { padding: 18px 20px 20px; }
   .res-section { padding-bottom: 36px; }
 }
+
+/* Epigraph: the line from The Intelligent Investor that opens the home page */
+.epigraph { margin: 0 auto; padding-top: 16px; padding-bottom: 8px; }
+.epigraph blockquote {
+  margin: 0; max-width: 980px; padding-left: 24px; border-left: 4px solid var(--accent);
+  font-family: Georgia, 'Times New Roman', serif; font-style: italic;
+  font-size: clamp(24px, 3vw, 40px); line-height: 1.25; letter-spacing: -0.01em;
+}
+.epigraph figcaption { margin-top: 14px; padding-left: 28px; font-family: var(--mono); font-size: 13px; color: var(--text-3); text-transform: uppercase; }
+.epigraph figcaption cite { font-style: normal; color: var(--ink); }
+
+/* The research levels: five steps on the dark band */
+.steps-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; }
+.steps-5 .step-tag { display: block; margin-top: 10px; font-family: var(--mono); font-size: 12px; text-transform: uppercase; color: #8C8C87; }
+@media (max-width: 1100px) { .steps-5 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } }
+
+/* Principles: four plain cards on the home page */
+.principles { padding-top: 24px; padding-bottom: 40px; }
+.principles .use { border-top: 5px solid var(--c, var(--accent)); }
+.principles .use .tag { color: var(--c, var(--accent)); }
