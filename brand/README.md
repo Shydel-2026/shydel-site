@@ -25,3 +25,5 @@ Exports in this folder:
 - Keep clear space around the lockup of at least the mark's height.
 - Do not recolour the blue slice; on dark backgrounds use the white versions.
 - Below 24 px use the mark alone, not the lockup.
+- `linkedin-cover-2256x382.png`, `linkedin-cover-cream-2256x382.png` — LinkedIn company page cover, ink and cream versions (2× of LinkedIn's 1128×191); lockup and tagline sit centre-right so the square page logo, which overlaps the bottom-left on desktop, never covers them
+- `linkedin-profile-banner-1584x396.png` — LinkedIn personal profile banner for the founders; content sits in the right half, clear of the profile photo at bottom-left
