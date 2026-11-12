@@ -803,8 +803,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .video-links a { text-decoration: none; }
 .video-links a:hover { text-decoration: underline; }
 .verdict { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; border-radius: 999px; padding: 3px 10px; border: 1px solid transparent; }
-.verdict-hold { background: var(--fi-soft); color: #8A5E0F; border-color: #EBD9B0; }
-.verdict-trim { background: #FBE5E0; color: #B23C28; border-color: #F2C4BB; }
+.verdict-hold, .verdict-watch { background: var(--fi-soft); color: #8A5E0F; border-color: #EBD9B0; }
+.verdict-trim, .verdict-sell { background: #FBE5E0; color: #B23C28; border-color: #F2C4BB; }
 .verdict-buy { background: var(--re-soft); color: #1F7A4D; border-color: #BFE3CD; }
 
 .deck-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }

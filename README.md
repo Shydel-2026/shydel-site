@@ -15,7 +15,7 @@ The top menu is Home · Platform · Resources · About.
 - `index.html` — home
 - `platform.html` — tabs for Process (level 1 numbers, levels 2–3, the top-pick card, the stress test, the level 5 portfolio review), Analysis (the value framework, the playbooks, the 18 stages, a financial and an operating-business example, the scorecard), Memory and Data; `platform.html#analysis` opens that tab
 - `assets.html` — redirects to `platform.html#analysis` (the old asset-class page; kept so existing links still land)
-- `resources.html` — the five published analyses: a video card per YouTube upload (click-to-play embed, falls back to a YouTube link) and a slide-deck card per PDF
+- `resources.html` — the published analyses: a video card per YouTube upload (click-to-play embed, falls back to a YouTube link) and a slide-deck card per PDF
 - `about.html`
 
 All pages share `styles.css` and `site.js` (tabs, dropdowns, stage pop-ups, screenshot lightbox; everything degrades to plain content without JS).
@@ -31,7 +31,7 @@ All pages share `styles.css` and `site.js` (tabs, dropdowns, stage pop-ups, scre
 `assets/slides/` holds each published deck as `<ticker>-analysis-<yyyy-mm>.pdf` plus a `<ticker>-cover.jpg` of its first page (1600 px wide; on a Mac: `qlmanage -t -s 1600 -o . deck.pdf` then `sips -s format jpeg`). To publish a new analysis:
 
 1. Drop the PDF and its cover in `assets/slides/`.
-2. In `resources.html`, copy a `<article class="video">` block and set `data-yt` to the YouTube video id, the links, the ticker tag, the verdict chip (`verdict-hold`, `verdict-trim`, `verdict-buy`) and a two-line summary.
+2. In `resources.html`, copy a `<article class="video">` block and set `data-yt` to the YouTube video id, the links, the ticker tag, the verdict chip (`verdict-buy`, `verdict-hold`, `verdict-watch`, `verdict-trim`, `verdict-sell`) and a two-line summary.
 3. Copy an `<a class="deck">` block for the PDF.
 
 Newest first in both lists. Keep the summaries to what the video says; the not-financial-advice note at the end of the section covers every item.
