@@ -1,6 +1,6 @@
 # shydel.com
 
-Marketing site for Shydel — AI analysts for value investment firms: security analysis in levels, a scorecard led by the margin of safety, stress tests on top picks and a review of the whole book. The home page opens with the epigraph of *The Intelligent Investor*.
+Marketing site for Shydel — a services firm that builds value investment firms their own AI research systems (the client owns it): security analysis in levels, a scorecard led by the margin of safety, stress tests on top picks and a review of the whole book. The home page opens with the epigraph of *The Intelligent Investor*.
 
 Plain static HTML/CSS, no build step. Open `index.html` in a browser, or serve the folder:
 
